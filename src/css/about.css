@@ -1,0 +1,253 @@
+body {
+  /* 'Roboto',  */
+  font-family: "Playfair Display", sans-serif;
+  background: white !important;
+  position: relative;
+  font-weight: 100;
+}
+
+/* .team-top-img img{
+    width: 80%;
+} */
+
+.jars-section-title-heading {
+  margin-bottom: 32px;
+}
+.link-text-style {
+  color: rgb(40, 117, 218);
+  font-weight: bold;
+}
+
+.about-philosophy-left-content h5 {
+  font-family: Playfair Display;
+  line-height: 32px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.about-philosophy-left-content h5::after {
+  content: "";
+  display: block;
+  width: 10%;
+  padding-top: 10px;
+  border-bottom: 2px solid #000;
+}
+
+.about-philosophy-left-content p {
+  color: rgb(58, 58, 58);
+}
+
+.top-content-section {
+  margin-bottom: 60px;
+  margin-top: 115px;
+  min-height: 90px;
+}
+
+.team-top-content h6 {
+  font-weight: 700;
+  color: #1553a5;
+  font-size: 22px;
+}
+
+.team-top-content p {
+  font-size: 16px;
+  color: #6b6b6b;
+}
+
+.team-top-content li {
+  display: inline;
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.team-top-content li img {
+  max-height: 16px;
+}
+
+.JAR-contant-button {
+  padding: 80px 0px;
+}
+
+.JAR-contant-button h3 {
+  font: 33px sans-serif;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.h3 {
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3.background {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+h3.background:before {
+  border-top: 2px solid #dfdfdf;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+h3.background span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: #fff;
+  padding: 0 15px;
+  font-family: Playfair Display;
+  font-weight: bolder;
+  line-height: 32px;
+}
+
+.JAR-contant-button-style li {
+  margin-top: 60px;
+}
+
+.container .title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  height: 224px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 86%;
+  left: 50%;
+  opacity: 1;
+  background-color: #fff;
+  border: 4px 4px 0px 0px;
+  border-radius: 4px px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px 0px;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+.team-member-profile-descritption {
+  margin: 5px 0px;
+}
+
+.team-member-profile-descritption img {
+  max-height: 12px !important;
+}
+
+.profile-designation {
+  font-size: 12px;
+  color: #1553a5;
+}
+
+.content-title {
+  font-weight: 700;
+  color: rgb(13, 59, 119);
+}
+
+.avatar.avatar-xlg {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+.avatar {
+  flex-shrink: 0;
+  /* width: 3rem;
+    height: 3rem; */
+  border-radius: 50%;
+}
+.team-card {
+  margin-top: 15px;
+  box-shadow: 0 6px 13px #f3f3f3;
+  padding: 3em;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+}
+.team-card h5 {
+  font-weight: bold;
+}
+.team-card span {
+  color: #6b6b6b;
+}
+.mb-3 {
+  margin-bottom: 1.5rem !important;
+}
+.team-card li {
+  display: inline;
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.social-icon img {
+  max-height: 16px;
+}
+.team-top-section {
+  margin-top: 45px;
+}

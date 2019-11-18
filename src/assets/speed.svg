@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <g id="Group_1" data-name="Group 1" transform="translate(-743 218)">
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="150" height="150" transform="translate(743 -218)" fill="#fff"/>
+    <g id="Group_15882" data-name="Group 15882" transform="translate(-780.964 -2106.117)">
+      <path id="Path_8230" data-name="Path 8230" d="M70.76,5.846h-3.3a6.5,6.5,0,0,0-2.6-4.547H70.76a.65.65,0,1,0,0-1.3H57.014a.65.65,0,1,0,0,1.3h3.937a5.251,5.251,0,0,1,5.2,4.546h-9.14a.65.65,0,1,0,0,1.3h9.14a5.258,5.258,0,0,1-5.2,4.612H57.021a.66.66,0,0,0-.649.669.671.671,0,0,0,.2.468L66.4,22.19a.647.647,0,0,0,.916-.026.663.663,0,0,0-.026-.929l-8.646-8.179h2.3a6.561,6.561,0,0,0,6.519-5.911h3.3a.65.65,0,1,0,0-1.3Z" transform="translate(1555.98 1952.247)" fill="#1553a5" stroke="#1553a5" stroke-width="0.7"/>
+      <g id="Ellipse_3060" data-name="Ellipse 3060" transform="translate(1589 1932.333)" fill="none" stroke="#1553a5" stroke-width="3">
+        <ellipse cx="31.236" cy="30.784" rx="31.236" ry="30.784" stroke="none"/>
+        <ellipse cx="31.236" cy="30.784" rx="29.736" ry="29.284" fill="none"/>
+      </g>
+      <g id="Ellipse_3061" data-name="Ellipse 3061" transform="translate(1595.338 1938.671)" fill="none" stroke="#1553a5" stroke-width="3">
+        <circle cx="24.446" cy="24.446" r="24.446" stroke="none"/>
+        <circle cx="24.446" cy="24.446" r="22.946" fill="none"/>
+      </g>
+      <line id="Line_10093" data-name="Line 10093" x1="41.448" transform="translate(1545.5 1974.126)" fill="none" stroke="#1553a5" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_10094" data-name="Line 10094" x1="24.609" transform="translate(1562.338 1967.65)" fill="none" stroke="#1553a5" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_10095" data-name="Line 10095" x1="38.857" transform="translate(1548.09 1961.174)" fill="none" stroke="#1553a5" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_10096" data-name="Line 10096" x1="33.676" transform="translate(1553.271 1954.698)" fill="none" stroke="#1553a5" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+body {
+  /* 'Roboto',  */
+  font-family: "Playfair Display", sans-serif;
+  background: white !important;
+  position: relative;
+  font-weight: 100;
+}
+
+.back-btn-section-row {
+  padding-top: 120px;
+}
+
+.back-btn-section-row img {
+  height: 26px;
+}
+
+.how-jama-works-content {
+  padding: 0px 0px;
+}
+
+.jars-section-title-heading {
+  margin-bottom: 320px;
+}
+
+.about-philosophy-left-content h4 {
+  font-family: Playfair Display;
+  font-weight: bold;
+  line-height: 32px;
+  color: #1d294a;
+  margin-bottom: 25px;
+}
+
+.about-philosophy-left-content h4::after {
+  content: "";
+  display: block;
+  width: 10%;
+  padding-top: 10px;
+  border-bottom: 2px solid #000;
+}
+
+.about-philosophy-left-content p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* .Aboutus-img-right img {
+    width: 80%;
+} */
+@media only screen and (max-width: 600px) {
+  .Aboutus-img-right img {
+    width: 100%;
+  }
+}
+.Aboutus-img-right img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,175 @@
+body {
+  background: transparent !important;
+}
+
+.testimonials-heading-title {
+  margin-bottom: 20px !important;
+  margin-top: 0px !important;
+  color: #000;
+}
+
+.testimonials-heading-title i {
+  float: right;
+  cursor: pointer;
+}
+
+.testimonials-heading-title::after {
+  border-bottom: 2px solid #000 !important;
+}
+
+.testimonials-cards {
+  background: #fff;
+  min-height: 250px;
+  border-radius: 4px;
+  padding: 25px;
+  position: relative;
+  margin-top: 25px;
+  box-shadow: 0 6px 13px #f3f3f3;
+  border: 1px solid #e2e2e2;
+}
+
+.testimonial-text {
+  font-family: Playfair Display;
+  color: #000;
+}
+.testimonial-text p {
+  font-weight: 100;
+}
+.profile-pic {
+  height: 70px;
+}
+.testimonial-text h6 {
+  margin-bottom: 5px;
+  color: #1553a5;
+}
+.testimonial-text p {
+  color: rgb(155, 155, 155);
+}
+.testimonial-description h6 {
+  font-family: Roboto;
+  font-weight: bold;
+}
+.testimonial-description p {
+  font-weight: 100;
+  color: #757575;
+}
+.testimonial-more-vert-btn {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.testimonal-bg {
+  padding: 50px 0px;
+  background: #fff !important ;
+  margin-top: 80px;
+}
+.load-more-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.testimonial-load-more-btn {
+  background: #fff !important;
+  color: #0c0c0c !important;
+  padding: 25px 42px !important;
+  line-height: 1px !important;
+  text-transform: none !important;
+  font-family: Playfair Display;
+  font-size: 18px !important;
+  border: 1px solid #1553a5;
+  box-shadow: none !important;
+}
+.testimonial-load-more-btn:hover {
+  background: #fff;
+}
+.page-footer-section {
+  background: #ffc20e;
+  color: #000;
+  margin-top: 100px;
+  padding-top: 25px;
+}
+.footer-titles {
+  font-family: Playfair Display;
+  font-weight: 600;
+  color: #1d294a;
+}
+.footer-titles::after {
+  content: "";
+  display: block;
+  width: 25%;
+  padding-top: 10px;
+  border-bottom: 2px solid #000;
+}
+.page-footer-section li a {
+  font-size: 14px;
+  color: #2b2b2b;
+}
+.footer-download-sections {
+  margin-top: 25px;
+}
+form.example input[type="text"] {
+  border: 1px solid grey;
+  float: left;
+  width: 45%;
+  background: transparent;
+  padding: 0px 6px;
+  border-radius: 2px;
+  margin-right: 10px;
+  color: #1d294a;
+}
+form.example button {
+  float: left;
+  padding: 14px;
+  background: rgb(255, 255, 255);
+  color: rgb(80, 80, 80);
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: Playfair Display;
+}
+form.example button:hover {
+  background: rgb(243, 243, 243);
+}
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+::placeholder {
+  /* Firefox, Chrome, Opera */
+
+  color: rgb(94, 94, 94);
+}
+@media only screen and (max-width: 600px) {
+  .jars-btns li {
+    padding: 10px 20px;
+  }
+}
+
+/* 
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+} */

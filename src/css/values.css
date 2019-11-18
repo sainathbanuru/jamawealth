@@ -1,0 +1,72 @@
+.value-tab-section {
+  margin-top: 100px;
+}
+.research-invest-section-content img {
+  max-height: 200px;
+}
+.value-top-section {
+  border-bottom: 3px solid #ffc20e;
+  background-image: url("../assets/ourvaluebg.svg");
+  position: relative;
+  min-height: 200px;
+}
+.research-invest-section-content {
+  padding-top: 80px;
+}
+
+.value-tabs {
+  font-family: Playfair Display;
+  font-size: 18px;
+  background: #1553a5;
+  color: white;
+  box-shadow: none;
+  min-width: 190px;
+  font-weight: bold;
+  margin: 0px 10px;
+}
+.Tabs {
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.Tabs__Tab {
+  display: inline-block;
+  padding: 1em;
+  background: transparent;
+  color: rgb(37, 37, 37);
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0px 10px;
+  font-family: Playfair Display;
+  font-size: 18px;
+  min-width: 190px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.operating-tab {
+  border: 1px solid #ffc20e !important;
+}
+.operating-tab:hover {
+  background: #ffc20e !important;
+  color: #fff !important;
+}
+
+.operating-tab-active {
+  background: #ffc20e !important;
+  color: #fff;
+}
+
+.value-tab-active {
+  background: #1553a5 !important;
+  color: #fff !important;
+  border: 1px solid #1553a5;
+}
+.value-tab {
+  border: 1px solid #1553a5 !important;
+}
+.value-tab:hover {
+  background: #1553a5 !important;
+  color: #fff !important;
+}
