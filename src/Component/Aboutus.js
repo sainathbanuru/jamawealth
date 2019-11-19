@@ -52,7 +52,7 @@ export class Aboutus extends Component {
         <div class="jars-section">
           <div class=" jars-section-title-heading ">
             <h4>
-              <b>Our Founders</b>
+              <b>Founders</b>
             </h4>
           </div>
           <div class=" row ">
@@ -94,7 +94,7 @@ export class Aboutus extends Component {
           <div class="container w-percent-90">
             <div class=" jars-section-title-heading ">
               <h4>
-                <b>Our Team</b>
+                <b>Team</b>
               </h4>
             </div>
             <div class="row">
@@ -207,7 +207,7 @@ export class Aboutus extends Component {
                 <span>J &nbsp; . &nbsp;A &nbsp;. &nbsp;R &nbsp;. &nbsp;S</span>
               </h3>
               <div class=" jars-btns JAR-contant-button-style ">
-                <Link to="/Jamaadvisorypage">
+                <Link to="/contactUs">
                   {" "}
                   <li class=" btn-outline ">Contact Our Team</li>
                 </Link>

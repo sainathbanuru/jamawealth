@@ -103,7 +103,8 @@ export class Pricing extends Component {
             Pricing
           </h1>
           <p id="pricing-description">
-            The fees paid for the Invsetment Advisory service is guranteed to be
+            The fees paid for the Jama Wealth Advisory & Research on Stocks (JARS)
+ service is guranteed to be
             transparent. No other hidden charges or transaction fees are levied
             directly or indirectly by us.There are no exit loads either.
           </p>

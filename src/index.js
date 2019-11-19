@@ -31,6 +31,8 @@ import FiveTrillionEconomy from "./Component/fiveTrillionEconomy";
 import HowToAllocateInfo from "./Component/howToAllocate";
 import Pricing from "./Component/pricing/index";
 import SheerMagicArticle from "./Component/sheerMagicArticle";
+import ContactUs from "./Component/contactUs";
+import Privacy from "./Component/privacy";
 
 const routing = (
   <Router>
@@ -66,6 +68,8 @@ const routing = (
 
       <Route path="/pricing" component={Pricing} />
       <Route path="/sheerMagicArticle" component={SheerMagicArticle} />
+      <Route path="/contactUs" component={ContactUs} />
+      <Route path="/privacy" component={Privacy} />
     </Switch>
     {/* </BrowserRouter> */}
   </Router>

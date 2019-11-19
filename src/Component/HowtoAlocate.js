@@ -16,6 +16,7 @@ import howjamaimgyllo from "../assets/howjamaimgyllo.png";
 import startimgyllo from "../assets/startimgyllo.png";
 import WOW from "wowjs";
 import Introsection from "./Introsection";
+import FeatureSection from "./featureSection";
 
 export class HowtoAlocate extends Component {
   componentDidMount() {
@@ -28,6 +29,7 @@ export class HowtoAlocate extends Component {
       <div>
         <Header />
         <Introsection />
+        <FeatureSection />
         <div class="Home-section-banner-img">
           <div class="container home-tabed-section">
             <div class="row center-align main-tab-section-title">

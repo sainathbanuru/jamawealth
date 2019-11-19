@@ -9,6 +9,9 @@ import Header from "./Header";
 import Downladebook from "./Downladebook";
 
 export class HowJamaWorksInfo extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div>
@@ -16,12 +19,7 @@ export class HowJamaWorksInfo extends Component {
 
         <div class="jars-section">
           <div class="row">
-            <div class="container-fluid back-btn-section-row w-percent-90 m-auto">
-              <Link to="/">
-                {" "}
-                <img class=" responsive-img" src={leftarrow} />
-              </Link>
-            </div>
+            <div class="container-fluid back-btn-section-row w-percent-90 m-auto"></div>
           </div>
 
           <div class="container how-jama-works-content w-percent-90">
@@ -36,7 +34,9 @@ export class HowJamaWorksInfo extends Component {
                 }}
               >
                 <div class="about-philosophy-left-content">
-                  <h4 style={{ textAlign: "center" }}>How jama works </h4>
+                  <h4 style={{ textAlign: "center" }}>
+                    How Jama Wealth works{" "}
+                  </h4>
                 </div>
               </div>
             </div>
@@ -52,7 +52,8 @@ export class HowJamaWorksInfo extends Component {
               >
                 <div class="row">
                   <div class="col s2" id="outer-circle">
-                    <div id="inner-circle"></div>
+                    {/* <div id="inner-circle"></div> */}
+                    <h5>1</h5>
                   </div>
                   <div class="col s9" style={{ textAlign: "left" }}>
                     <h5 class="worksHeading" style={{ marginLeft: 0 }}>
@@ -67,7 +68,8 @@ export class HowJamaWorksInfo extends Component {
 
                 <div class="row">
                   <div class="col s2" id="outer-circle">
-                    <div id="inner-circle"></div>
+                    {/* <div id="inner-circle"></div> */}
+                    <h5>2</h5>
                   </div>
                   <div class="col s9" style={{ textAlign: "left" }}>
                     <h5 class="worksHeading" style={{ marginLeft: 0 }}>
@@ -79,14 +81,15 @@ export class HowJamaWorksInfo extends Component {
 
                 <div class="row">
                   <div class="col s2" id="outer-circle">
-                    <div id="inner-circle"></div>
+                    {/* <div id="inner-circle"></div> */}
+                    <h5>3</h5>
                   </div>
                   <div class="col s9" style={{ textAlign: "left" }}>
                     <h5 class="worksHeading" style={{ marginLeft: 0 }}>
                       Link Demat Account
                     </h5>
                     <p>Bring Your Own Demat Account </p>
-                    <div
+                    {/* <div
                       class="video-container wow fadeIn"
                       style={{ margin: "32px 0" }}
                     >
@@ -98,13 +101,14 @@ export class HowJamaWorksInfo extends Component {
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                       ></iframe>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col s2" id="outer-circle">
-                    <div id="inner-circle"></div>
+                    {/* <div id="inner-circle"></div> */}
+                    <h5>4</h5>
                   </div>
                   <div class="col s9" style={{ textAlign: "left" }}>
                     <h5 class="worksHeading" style={{ marginLeft: 0 }}>
@@ -118,7 +122,7 @@ export class HowJamaWorksInfo extends Component {
 
                 <h4 style={{ lineHeight: 1.5 }}>
                   Too Busy To Track Investments? Not Able To Take Timely
-                  Portfolio Action
+                  Portfolio Action?
                 </h4>
                 <p>
                   As a busy professional or a businessman, we know that your

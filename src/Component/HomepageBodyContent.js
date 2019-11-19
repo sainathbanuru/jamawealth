@@ -29,8 +29,12 @@ export class HomepageBodyContent extends Component {
 
         <div class="jars-section">
           <div class="container w-percent-90 ">
-            <div class="jars-section-title-heading">
-              {/* <h4> JARS' Model Portfolio Has Delivered Outsized Returns </h4> */}
+            <div class="jars-section-title-heading" style={{ marginTop: 64 }}>
+              <h4>
+                {" "}
+                JARS’s Model Portfolio Has Outperformed All Investment
+                Alternatives{" "}
+              </h4>
             </div>
             <div class="row valign-wrapper">
               <div class="col s12 m12  no-padding">
@@ -96,12 +100,11 @@ export class HomepageBodyContent extends Component {
           </div>
         </div>
 
-        <div class="separator">
-          {/* <h4>Want to Invest ? </h4> */}
+        {/* <div class="separator">          
           <a class="waves-effect waves-light btn btn-large btn-orange ">
             Contact Advisor
           </a>
-        </div>
+        </div> */}
 
         <div class="jars-section Wealth-curated-section">
           <div class="container w-percent-90">
@@ -261,19 +264,11 @@ export class HomepageBodyContent extends Component {
         </div>
         <div>
           <div class="container how-jama-works-content w-percent-90">
-            <div class="row valign-wrapper">
-              <div
-                class=" "
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  flexDirection: "column"
-                }}
-              >
-                <div class="about-philosophy-left-content">
-                  <h4 style={{ marginBottom: 0 }}>As Featured In </h4>
-                </div>
-              </div>
+            <div
+              class="jars-section-title-heading"
+              style={{ marginTop: 64, marginBottom: 0 }}
+            >
+              <h4>As Featured In</h4>
             </div>
           </div>
           <div className="featuredImageContainer">
@@ -475,7 +470,7 @@ export class HomepageBodyContent extends Component {
               <div class="research-invest-section-content">
                 <h4 style={{ lineHeight: 1.5 }}>
                   Too Busy To Track Investments? Not Able To Take Timely
-                  Portfolio Action
+                  Portfolio Action?
                 </h4>
                 <p>
                   As a busy professional or a businessman, we know that your

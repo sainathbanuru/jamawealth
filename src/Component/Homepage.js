@@ -16,12 +16,7 @@ import startimgyllo from "../assets/startimgyllo.png";
 import Introsection from "./Introsection";
 import WOW from "wowjs";
 
-import nocusmoney from "../assets/nocusmoney.svg";
-import nocustomshare from "../assets/nocustomshare.svg";
-import Group10 from "../assets/Group10.svg";
-import Group11 from "../assets/Group11.svg";
-import Group12 from "../assets/Group12.svg";
-import Group13 from "../assets/Group13.svg";
+import FeatureSection from "./featureSection";
 
 export class Homepage extends Component {
   componentDidMount() {
@@ -208,65 +203,3 @@ export class Homepage extends Component {
 }
 
 export default Homepage;
-
-function FeatureSection() {
-  return (
-    <div style={{ marginTop: 32 }}>
-      <div class="container homepage-below-feature-section-list w-percent-90">
-        <div class="row Feature-section-title center-align">
-          <h5>An investment model so clean, that you will be surprised</h5>
-        </div>
-        <div class="row">
-          <div class="col s6 m2 lg2">
-            <div
-              class="features-icons-images center-align wow fadeIn"
-              data-wow-delay="0.1s"
-            >
-              <img class="responsive-img" src={nocusmoney} />
-            </div>
-          </div>
-          <div class="col s6 m2 lg2">
-            <div
-              class="features-icons-images center-align wow fadeIn"
-              data-wow-delay="0.2s"
-            >
-              <img class="responsive-img" src={nocustomshare} />
-            </div>
-          </div>
-          <div class="col s6 m2 lg2">
-            <div
-              class="features-icons-images center-align wow fadeIn"
-              data-wow-delay="0.3s"
-            >
-              <img class="responsive-img" src={Group10} />
-            </div>
-          </div>
-          <div class="col s6 m2 lg2">
-            <div
-              class="features-icons-images center-align wow fadeIn"
-              data-wow-delay="0.4s"
-            >
-              <img class="responsive-img" src={Group11} />
-            </div>
-          </div>
-          <div class="col s6 m2 lg2">
-            <div
-              class="features-icons-images center-align wow fadeIn"
-              data-wow-delay="0.5s"
-            >
-              <img class="responsive-img" src={Group12} />
-            </div>
-          </div>
-          <div class="col s6 m2 lg2">
-            <div
-              class="features-icons-images center-align wow fadeIn"
-              data-wow-delay="0.6s"
-            >
-              <img class="responsive-img" src={Group13} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
