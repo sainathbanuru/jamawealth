@@ -32,7 +32,7 @@ export class HomepageBodyContent extends Component {
             <div class="jars-section-title-heading" style={{ marginTop: 64 }}>
               <h4>
                 {" "}
-                JARS Model Portfolio Has Outperformed All Investment
+                JARS Model Portfolio Outperforms All Other Investment
                 Alternatives{" "}
               </h4>
             </div>
