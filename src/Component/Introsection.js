@@ -33,7 +33,7 @@ export class Introsection extends Component {
                   </div>
                   <div class="jars-btns">
                     <a class="waves-effect waves-light btn btn-large btn-orange m-r-15">
-                      Contact Wealth Manager
+                      Get Started
                     </a>
                   </div>
                   <p class="Sebi-style-intro">

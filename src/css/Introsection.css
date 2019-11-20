@@ -2,7 +2,7 @@
   background-image: url("../assets/test.png");
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 4px solid #ffc20e;
+  /* border-bottom: 4px solid #ffc20e; */
   position: relative;
   top: 56px;
 }
@@ -22,7 +22,7 @@
   border-bottom: 0.02rem solid #ffc20e;
 }
 .banner-para-list li {
-  color: #fff;
+  color: #ddd;
   font-size: 18px;
 }
 
@@ -31,9 +31,10 @@
 }
 .intro-section-content-text h4 {
   font-size: 38px;
-  color: #000;
+  color: #fff;
   position: relative;
   font-family: Playfair Display;
+  font-weight: bold;
 }
 .highlight-text-style {
   color: #ffc20e;
@@ -42,7 +43,7 @@
 .Sebi-style-intro {
   position: absolute;
   bottom: 27px;
-  background-color: #000;
+  /* background-color: #ddd; */
   color: #fff;
   padding: 8px 8px;
   font-size: 18px;

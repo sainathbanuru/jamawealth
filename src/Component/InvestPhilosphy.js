@@ -14,6 +14,7 @@ import howjamaimgyllo from "../assets/howjamaimgyllo.png";
 import startimgyllo from "../assets/startimgyllo.png";
 import Introsection from "./Introsection";
 import WOW from "wowjs";
+import FeatureSection from "./featureSection";
 
 export class InvestPhilosphy extends Component {
   componentDidMount() {
@@ -26,6 +27,7 @@ export class InvestPhilosphy extends Component {
       <div>
         <Header />
         <Introsection />
+        <FeatureSection />
         <div class="Home-section-banner-img">
           <div class="container home-tabed-section">
             <div class="row center-align main-tab-section-title">

@@ -81,10 +81,10 @@ export class Footer extends Component {
                     <a href="/Aboutus">About Jama JARS</a>
                   </li>
                   <li>
-                    <a href="#!">Pricacy Policy</a>
+                    <a href="/privacy">Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="#!">Terms & Conditions</a>
+                    <a href="/privacy">Terms & Conditions</a>
                   </li>
                   {/* <li>
                     <a href="#!">Press Enquiries</a>

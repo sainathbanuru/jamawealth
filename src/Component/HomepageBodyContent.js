@@ -32,7 +32,7 @@ export class HomepageBodyContent extends Component {
             <div class="jars-section-title-heading" style={{ marginTop: 64 }}>
               <h4>
                 {" "}
-                JARS’s Model Portfolio Has Outperformed All Investment
+                JARS Model Portfolio Has Outperformed All Investment
                 Alternatives{" "}
               </h4>
             </div>
@@ -111,9 +111,15 @@ export class HomepageBodyContent extends Component {
             <div class="jars-section-title-heading">
               <h4>Investment Advisors</h4>
             </div>
-            <div class="row">
-              <div class="col s12 m6">
-                <div class="Curator-card-section wow fadeIn">
+            <div
+              class="row"
+              style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
+            >
+              <div class="col s12 m6" style={{ width: "100%", height: "100%" }}>
+                <div
+                  class="Curator-card-section wow fadeIn"
+                  style={{ height: "100%" }}
+                >
                   <div class="row valign-wrapper" style={{ marginBottom: 0 }}>
                     <div class="col s3 no-padding">
                       <img
@@ -167,8 +173,11 @@ export class HomepageBodyContent extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col s12 m6">
-                <div class="Curator-card-section wow fadeIn">
+              <div class="col s12 m6" style={{ width: "100%", height: "100%" }}>
+                <div
+                  class="Curator-card-section wow fadeIn"
+                  style={{ height: "100%" }}
+                >
                   <div class="row valign-wrapper" style={{ marginBottom: 0 }}>
                     <div class="col s3 no-padding">
                       <img
