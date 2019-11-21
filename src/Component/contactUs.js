@@ -50,6 +50,7 @@ export default class ContactUs extends React.Component {
     try {
       const response = await fetch("https://ref.jama.co.in/app/api/newsendy", {
         method: "post",
+        crossDomain: true,
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json"
