@@ -1,6 +1,6 @@
 /* "Roboto", */
 body {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-image: url("../assets/bg_block_vector.svg");
   position: relative;
   font-weight: 100;
@@ -113,6 +113,7 @@ nav ul a:hover {
   padding: 8px 15px !important;
   border: 1px solid #ffc20e;
   border-radius: 2px;
+  margin: 0 4px;
 }
 .start-btn:hover {
   color: #000 !important;
@@ -130,7 +131,7 @@ nav ul a:hover {
 }
 .main-tab-section-title h4 {
   color: #fff;
-  font-family: Playfair Display;
+  font-family: Roboto;
 }
 .read-more-btn-style {
   background: #ffc20e;
@@ -138,7 +139,7 @@ nav ul a:hover {
   padding: 16px 32px;
   border: none;
   border-radius: 2px;
-  font-family: Playfair Display;
+  font-family: Roboto;
   cursor: pointer;
   font-size: 16px;
 }
@@ -166,7 +167,7 @@ nav ul a:hover {
 .Jama-tab-card-btn {
   background: rgba(255, 255, 255, 0.9);
   padding: 18px 28px;
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-weight: 600;
   /* background: #fff; */
   min-height: 108px;
@@ -290,7 +291,7 @@ span i {
 }
 
 .jars-section-title-heading h4 {
-  font-family: Playfair Display;
+  font-family: Roboto;
   text-align: center;
   font-weight: bold;
   /* margin-top: 60px;
@@ -307,7 +308,7 @@ span i {
 }
 
 .Jars-section-left h4 {
-  font-family: Playfair Display;
+  font-family: Roboto;
   line-height: 44px;
   margin: 25px 0px;
 }
@@ -400,11 +401,11 @@ span i {
 }
 
 .ebook-section-left h5 {
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-weight: bold;
 }
 .ebook-section-left h4 {
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-weight: bold;
 }
 
@@ -455,7 +456,7 @@ span i {
 }
 
 .testimonial-text {
-  font-family: Playfair Display;
+  font-family: Roboto;
   color: #000;
   position: relative;
   top: -6px;
@@ -514,7 +515,7 @@ span i {
   padding: 25px 42px !important;
   line-height: 1px !important;
   text-transform: none !important;
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-size: 18px !important;
 }
 
@@ -528,7 +529,7 @@ span i {
 }
 
 .research-invest-section-content h4 {
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-weight: 600;
 }
 
@@ -563,7 +564,7 @@ span i {
 }
 
 .curators-profile-title h5 {
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-weight: 600;
   color: #1553a5;
   margin-bottom: 5px;
@@ -611,7 +612,7 @@ span i {
 }
 
 .footer-titles {
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-weight: 600;
   color: #1d294a;
 }
@@ -654,7 +655,7 @@ form.example button {
   border: 1px solid #fff;
   cursor: pointer;
   border-radius: 2px;
-  font-family: Playfair Display;
+  font-family: Roboto;
 }
 
 form.example button:hover {
@@ -693,7 +694,7 @@ nav .sidenav-trigger {
   padding-bottom: 45px;
 }
 .Feature-section-title h5 {
-  font-family: Playfair Display;
+  font-family: Roboto;
   line-height: 124%;
   margin-bottom: 35px;
   font-size: 2.28em;
@@ -713,7 +714,7 @@ nav .sidenav-trigger {
 .mobile-title-text {
   display: none;
   font-weight: bold;
-  font-family: Playfair Display;
+  font-family: Roboto;
 }
 .mobile-content-text {
   display: none !important;
@@ -734,7 +735,7 @@ nav .sidenav-trigger {
 }
 
 .separator h4 {
-  font-family: playfair display;
+  font-family: Roboto;
   font-weight: bold;
   color: #fff;
   margin: 0;
@@ -750,6 +751,17 @@ nav .sidenav-trigger {
 
 .contact-container label {
   margin-top: 32px;
+}
+
+.founders-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contactus {
+  width: 40%;
+  height: 450px;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
@@ -809,6 +821,14 @@ nav .sidenav-trigger {
   .contact-container {
     width: 90%;
     margin: 120px auto;
+  }
+
+  .founders-section {
+    grid-template-columns: 1fr;
+  }
+
+  .contactus {
+    width: 90%;
   }
 }
 
@@ -932,7 +952,7 @@ nav ul li.active {
 }
 
 .worksHeading {
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-weight: bold;
 }
 

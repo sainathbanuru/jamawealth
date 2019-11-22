@@ -38,31 +38,25 @@ export class IndiasEconomy extends Component {
             </div>
             <div class="row">
               <div class="col s3 m4 xl3 tab-card-margin-style mobile-ver-style">
-                <Link to="/BuildWealthPrudence">
-                  {" "}
-                  <div class="left-menu-wealth-tab">
-                    <div class="Jama-tab-card-btn Build-wealth-tab-btn not-active-wealth-btn valign-wrapper">
+                {" "}
+                <div class="left-menu-wealth-tab">
+                  <div class="Jama-tab-card-btn Build-wealth-tab-btn not-active-wealth-btn valign-wrapper">
+                    <span>
                       <span>
-                        <span>
-                          <img
-                            class="mobile-show-img"
-                            src={barsLight}
-                            alt="preserve & prosper"
-                          />
-                        </span>
-                        <span>
-                          <h6
-                            class="under-line-style"
-                            style={{ marginLeft: 0 }}
-                          >
-                            Preserve & Prosper
-                          </h6>
-                        </span>
+                        <img
+                          class="mobile-show-img"
+                          src={barsLight}
+                          alt="preserve & prosper"
+                        />
                       </span>
-                    </div>
+                      <span>
+                        <h6 class="under-line-style" style={{ marginLeft: 0 }}>
+                          Preserve & Prosper
+                        </h6>
+                      </span>
+                    </span>
                   </div>
-                </Link>
-
+                </div>
                 <div class="left-menu-sub-tabs">
                   <div class="Jama-tab-card-btn left-card-tab valign-wrapper left-menu-sub-tabs-below-wealth b-rad-t left-menu-sub-active">
                     <span>

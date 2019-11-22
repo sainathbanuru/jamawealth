@@ -1,6 +1,6 @@
 body {
   /* 'Roboto',  */
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: white !important;
   position: relative;
   font-weight: 100;
@@ -23,7 +23,7 @@ body {
 }
 
 .about-philosophy-left-content h4 {
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-weight: bold;
   line-height: 32px;
   color: #1d294a;

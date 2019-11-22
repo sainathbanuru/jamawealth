@@ -12,6 +12,7 @@ import aboutimg from "../assets/aboutimg.svg";
 import philosophyimg from "../assets/philosophyimg.jpg";
 import philosophyimgFocus from "../assets/investmentPhilosophyFocus.png";
 import philosophyimgFocus2 from "../assets/investmentPhilosophyFocus2.png";
+import investment_philosophy from "../assets/investment_philosophy@2x.png";
 
 export class Investphilosphyinfo extends Component {
   componentDidMount() {
@@ -38,7 +39,7 @@ export class Investphilosphyinfo extends Component {
               <div class="about-philosophy-left-content">
                 <h4>Investment Philosophy</h4>
                 <div class="Aboutus-img-right right-align">
-                  <img class=" responsive-img" src={philosophyimg} />
+                  <img class=" responsive-img" src={investment_philosophy} />
                 </div>
                 <p>
                   We follow a simple Investment Philosophy for JARS. It is

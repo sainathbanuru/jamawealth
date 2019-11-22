@@ -111,10 +111,7 @@ export class HomepageBodyContent extends Component {
             <div class="jars-section-title-heading">
               <h4>Investment Advisors</h4>
             </div>
-            <div
-              class="row"
-              style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
-            >
+            <div class="row founders-section">
               <div class="col s12 m6" style={{ width: "100%", height: "100%" }}>
                 <div
                   class="Curator-card-section wow fadeIn"
@@ -221,7 +218,7 @@ export class HomepageBodyContent extends Component {
                           SEBI Registered Investment Advisor
                         </li> */}
                         <li class="curator-description-li">
-                          PGDM from 11M Bangalore
+                          PGDM from IIM Bangalore
                         </li>
                       </ul>
                     </div>
@@ -488,9 +485,11 @@ export class HomepageBodyContent extends Component {
                   helps grow your wealth with clean operating principles.
                 </p>
                 <div class="research-invest-btn-section">
-                  <a class="waves-effect waves-light btn btn-large btn-orange m-r-15">
-                    Contact Advisor
-                  </a>
+                  <Link to="/contactus">
+                    <a class="waves-effect waves-light btn btn-large btn-orange m-r-15">
+                      Contact Advisor
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

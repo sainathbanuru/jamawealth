@@ -15,7 +15,7 @@
 }
 
 .value-tabs {
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-size: 18px;
   background: #1553a5;
   color: white;
@@ -38,7 +38,7 @@
   cursor: pointer;
   border-radius: 4px;
   margin: 0px 10px;
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-size: 18px;
   min-width: 190px;
   text-align: center;

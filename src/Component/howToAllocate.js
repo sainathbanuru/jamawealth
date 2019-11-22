@@ -12,7 +12,7 @@ import aboutimg from "../assets/aboutimg.svg";
 import philosophyimg from "../assets/philosophyimg.jpg";
 import fivetrillioneconomy from "../assets/fivetrillioneconomy.png";
 import philosophyimgFocus2 from "../assets/investmentPhilosophyFocus2.png";
-
+import AllocateBanner from "../assets/asset_allocation@2x.png";
 export class HowToAllocate extends Component {
   componentDidMount() {
     new WOW.WOW().init();
@@ -38,7 +38,7 @@ export class HowToAllocate extends Component {
               <div class="about-philosophy-left-content">
                 <h4>Asset Allocation</h4>
                 <div class="Aboutus-img-right right-align">
-                  <img class=" responsive-img" src={philosophyimg} />
+                  <img class=" responsive-img" src={AllocateBanner} />
                 </div>
 
                 {/* <blockquote>

@@ -6,7 +6,7 @@
 }
 
 .footer-titles {
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-weight: 600;
   color: #1d294a;
 }
@@ -36,7 +36,7 @@ form.example button {
   border: 1px solid #fff;
   cursor: pointer;
   border-radius: 2px;
-  font-family: Playfair Display;
+  font-family: Roboto;
 }
 
 form.example button:hover {

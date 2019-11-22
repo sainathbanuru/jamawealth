@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./pricing.css";
 import Header from "../Header";
 import Footer from "../Footer";
+import { Link } from "react-router-dom";
 
 const plan1 = [
   {
@@ -99,14 +100,12 @@ export class Pricing extends Component {
             backgroundColor: "#f4f5fb"
           }}
         >
-          <h1 style={{ fontFamily: "playfair display", fontWeight: "bold" }}>
-            Pricing
-          </h1>
+          <h1 style={{ fontFamily: "Roboto", fontWeight: "bold" }}>Pricing</h1>
           <p id="pricing-description">
-            The fees paid for the Jama Wealth Advisory & Research on Stocks (JARS)
- service is guranteed to be
-            transparent. No other hidden charges or transaction fees are levied
-            directly or indirectly by us.There are no exit loads either.
+            The fees paid for the Jama Wealth Advisory & Research on Stocks
+            (JARS) service is guranteed to be transparent. No other hidden
+            charges or transaction fees are levied directly or indirectly by
+            us.There are no exit loads either.
           </p>
         </div>
 
@@ -227,6 +226,32 @@ export class Pricing extends Component {
           <div className="gridItem border-bottom-zero"></div>
           <div className="gridItem border-bottom-zero"></div>
           <div className="gridItem border-bottom-zero border-right-zero"></div> */}
+        </div>
+
+        <div class=" research-invest-section ">
+          <div class=" row ">
+            <div class=" col s12 m6 offset-m3 ">
+              <div class=" research-invest-section-content ">
+                <h4 style={{ lineHeight: 1.5 }}>
+                  Too Busy To Track Investments? Not Able To Take Timely
+                  Portfolio Action?
+                </h4>
+                <p>
+                  As a busy professional or a businessman, we know that your
+                  primary focus is where it should be. Delegate the day to day
+                  tracking of your investment portfolio to a trusted advisor who
+                  helps grow your wealth with Seven Clean Operating Principles.
+                </p>
+                <div class=" research-invest-btn-section ">
+                  <Link to="/contactus">
+                    <a class="waves-effect waves-light btn btn-large btn-orange m-r-15">
+                      Contact Advisor
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <Footer />
       </div>

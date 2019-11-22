@@ -29,7 +29,7 @@ body {
 }
 
 .testimonial-text {
-  font-family: Playfair Display;
+  font-family: Roboto;
   color: #000;
 }
 .testimonial-text p {
@@ -73,7 +73,7 @@ body {
   padding: 25px 42px !important;
   line-height: 1px !important;
   text-transform: none !important;
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-size: 18px !important;
   border: 1px solid #1553a5;
   box-shadow: none !important;
@@ -88,7 +88,7 @@ body {
   padding-top: 25px;
 }
 .footer-titles {
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-weight: 600;
   color: #1d294a;
 }
@@ -124,7 +124,7 @@ form.example button {
   border: 1px solid #fff;
   cursor: pointer;
   border-radius: 2px;
-  font-family: Playfair Display;
+  font-family: Roboto;
 }
 form.example button:hover {
   background: rgb(243, 243, 243);

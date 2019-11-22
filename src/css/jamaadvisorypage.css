@@ -1,6 +1,6 @@
 
 .jamaadvisory-left-content h4{
-    font-family: Playfair Display;        
+    font-family: Roboto;        
     margin-bottom: 30px;
 }   
 .jamaadvisory-left-content p{
@@ -50,7 +50,7 @@
     color: rgb(102, 102, 102);
 }
 .Key-strength-title h4{
-    font-family: Playfair Display; 
+    font-family: Roboto; 
     font-weight: bold;
 }
 .Key-strength-title h4::after{

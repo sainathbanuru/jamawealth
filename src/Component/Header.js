@@ -40,7 +40,7 @@ export class Header extends Component {
               </li>
               {/* <li><Link to="/testimonial" class="active">Testimonials</Link></li> */}
               <li>
-                <Link to="#" class="start-btn">
+                <Link to="/contactus" class="start-btn">
                   Get Started
                 </Link>
               </li>

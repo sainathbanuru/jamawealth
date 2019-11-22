@@ -12,6 +12,7 @@ import aboutimg from "../assets/aboutimg.svg";
 import philosophyimg from "../assets/philosophyimg.jpg";
 import philosophyimgFocus from "../assets/investmentPhilosophyFocus.png";
 import philosophyimgFocus2 from "../assets/investmentPhilosophyFocus2.png";
+import MagicBanner from "../assets/compounding@2x.png";
 
 export class SheerMagicArticle extends Component {
   componentDidMount() {
@@ -38,7 +39,7 @@ export class SheerMagicArticle extends Component {
               <div class="about-philosophy-left-content">
                 <h4>Unlock the magic of compounding</h4>
                 <div class="Aboutus-img-right right-align">
-                  <img class=" responsive-img" src={philosophyimg} />
+                  <img class=" responsive-img" src={MagicBanner} />
                 </div>
                 <blockquote>
                   Most good things in life are simple, yet hard. Growing &

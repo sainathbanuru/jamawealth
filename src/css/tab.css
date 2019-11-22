@@ -13,7 +13,7 @@
   cursor: pointer;
   border-radius: 4px;
   margin: 0px 10px;
-  font-family: Playfair Display;
+  font-family: Roboto;
   font-size: 18px;
   min-width: 190px;
   text-align: center;
@@ -39,7 +39,7 @@
 }
 .tab-content-value-list h5 {
   font-weight: bold;
-  font-family: Playfair Display;
+  font-family: Roboto;
   margin: 0px;
 }
 

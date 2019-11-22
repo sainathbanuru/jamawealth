@@ -131,9 +131,11 @@ export class HowJamaWorksInfo extends Component {
                   helps grow your wealth with Seven Clean Operating Principles.
                 </p>
                 <div class=" research-invest-btn-section ">
-                  <a class="waves-effect waves-light btn btn-large btn-orange m-r-15">
-                    Contact Advisor
-                  </a>
+                  <Link to="/contactus">
+                    <a class="waves-effect waves-light btn btn-large btn-orange m-r-15">
+                      Contact Advisor
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -37,31 +37,25 @@ export class InvestPhilosphy extends Component {
             </div>
             <div class="row">
               <div class="col s3 m4 xl3 tab-card-margin-style mobile-ver-style">
-                <Link to="/BuildWealthPrudence">
-                  {" "}
-                  <div class="left-menu-wealth-tab">
-                    <div class="Jama-tab-card-btn Build-wealth-tab-btn valign-wrapper">
+                {" "}
+                <div class="left-menu-wealth-tab">
+                  <div class="Jama-tab-card-btn Build-wealth-tab-btn valign-wrapper">
+                    <span>
                       <span>
-                        <span>
-                          <img
-                            class="mobile-show-img"
-                            src={bars}
-                            alt="preserve & prosper"
-                          />
-                        </span>
-                        <span>
-                          <h6
-                            class="under-line-style"
-                            style={{ marginLeft: 0 }}
-                          >
-                            Preserve & Prosper
-                          </h6>
-                        </span>
+                        <img
+                          class="mobile-show-img"
+                          src={bars}
+                          alt="preserve & prosper"
+                        />
                       </span>
-                    </div>
+                      <span>
+                        <h6 class="under-line-style" style={{ marginLeft: 0 }}>
+                          Preserve & Prosper
+                        </h6>
+                      </span>
+                    </span>
                   </div>
-                </Link>
-
+                </div>
                 <div class="left-menu-sub-tabs">
                   <Link to="/IndiasEconomy">
                     {" "}
@@ -160,12 +154,12 @@ export class InvestPhilosphy extends Component {
                       <div class="col s12 m12 l8">
                         <h5 class="mobile-title-text">Investment Philosophy</h5>
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book since the
-                          1500s, when an unknown printer took a galley
+                          We follow a simple Investment Philosophy for JARS
+                          called Roots & Wings. Roots aim to preserve wealth by
+                          selecting companies with low debt, consistent
+                          efficiency & promoter integrity. Wings aim to increase
+                          prosperity by identifying growing companies (sales /
+                          profit / cashflows)
                         </p>
                         <div class="read-more-btn">
                           <Link to="/Investphilosphyinfo">

@@ -12,6 +12,7 @@ import aboutimg from "../assets/aboutimg.svg";
 import philosophyimg from "../assets/philosophyimg.jpg";
 import fivetrillioneconomy from "../assets/fivetrillioneconomy.png";
 import philosophyimgFocus2 from "../assets/investmentPhilosophyFocus2.png";
+import BannerImage from "../assets/5trillion@2x.png";
 
 export class Investphilosphyinfo extends Component {
   componentDidMount() {
@@ -38,7 +39,7 @@ export class Investphilosphyinfo extends Component {
               <div class="about-philosophy-left-content">
                 <h4>Benefiting from India’s $5 Trillion Economy</h4>
                 <div class="Aboutus-img-right right-align">
-                  <img class=" responsive-img" src={philosophyimg} />
+                  <img class=" responsive-img" src={BannerImage} />
                 </div>
                 <p>
                   The remarkable thing about India’s economy is that it has

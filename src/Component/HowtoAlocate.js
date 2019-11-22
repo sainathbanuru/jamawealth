@@ -39,31 +39,25 @@ export class HowtoAlocate extends Component {
             </div>
             <div class="row">
               <div class="col s3 m4 xl3 tab-card-margin-style mobile-ver-style">
-                <Link to="/BuildWealthPrudence">
-                  {" "}
-                  <div class="left-menu-wealth-tab">
-                    <div class="Jama-tab-card-btn Build-wealth-tab-btn not-active-wealth-btn valign-wrapper">
+                {" "}
+                <div class="left-menu-wealth-tab">
+                  <div class="Jama-tab-card-btn Build-wealth-tab-btn not-active-wealth-btn valign-wrapper">
+                    <span>
                       <span>
-                        <span>
-                          <img
-                            class="mobile-show-img"
-                            src={barsLight}
-                            alt="preserve & prosper"
-                          />
-                        </span>
-                        <span>
-                          <h6
-                            class="under-line-style"
-                            style={{ marginLeft: 0 }}
-                          >
-                            Preserve & Prosper
-                          </h6>
-                        </span>
+                        <img
+                          class="mobile-show-img"
+                          src={barsLight}
+                          alt="preserve & prosper"
+                        />
                       </span>
-                    </div>
+                      <span>
+                        <h6 class="under-line-style" style={{ marginLeft: 0 }}>
+                          Preserve & Prosper
+                        </h6>
+                      </span>
+                    </span>
                   </div>
-                </Link>
-
+                </div>
                 <div class="left-menu-sub-tabs">
                   <Link to="/IndiasEconomy">
                     {" "}
@@ -164,11 +158,11 @@ export class HowtoAlocate extends Component {
                           How to allocate assets
                         </h5>
                         <p>
-                          Most good things in life are simple, yet hard. Growing
-                          & retaining wealth is simple too, right? Just invest
-                          regularly in a set of equities, and over time wealth
-                          happens. Compounded growth will silently do its work.
-                          But not quite so!
+                          Almost everything in life has a price to it. There is
+                          no ‘free lunch’, as the proverb goes. But some things
+                          are free. In the investing world, asset allocation is
+                          a free ticket to peace of mind, and possibly higher
+                          returns.
                         </p>
                         <div class="read-more-btn">
                           <Link to="/howToAllocate">
