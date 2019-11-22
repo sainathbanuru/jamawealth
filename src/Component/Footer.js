@@ -91,9 +91,9 @@ export class Footer extends Component {
                   </li> */}
                 </ul>
               </div>
-              <div class="col m4 s12 m-t-20">
+              {/* <div class="col m4 s12 m-t-20">
                 <h6 class="footer-titles">Subscribe to our Newsletter</h6>
-                {/* <p>Lorem Ipsum is simply dumszmy text of the printing and typesetting industry.</p> */}
+                {/* <p>Lorem Ipsum is simply dumszmy text of the printing and typesetting industry.</p> 
                 <form class="example" style={{ marginTop: 14 }}>
                   <input
                     type="text"
@@ -102,7 +102,7 @@ export class Footer extends Component {
                   ></input>
                   <button type="submit">Subscribe</button>
                 </form>
-              </div>
+              </div> */}
             </div>
             <p>
               * Does not assume impact of transaction costs, taxes or fees.
