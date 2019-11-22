@@ -9,7 +9,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Downladebook from "./Downladebook";
 
-export class startwealthcreationinfo extends Component {
+class startwealthcreationinfo extends Component {
   render() {
     return (
       <div>

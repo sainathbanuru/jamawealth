@@ -67,7 +67,7 @@ const plan3 = [
   }
 ];
 
-export class Pricing extends Component {
+class Pricing extends Component {
   state = {
     tab: 1,
     planDetails: plan1

@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Downladebook from "./Downladebook";
 
-export class HowJamaWorksInfo extends Component {
+class HowJamaWorksInfo extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

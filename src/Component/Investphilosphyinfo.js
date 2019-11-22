@@ -14,7 +14,7 @@ import philosophyimgFocus from "../assets/investmentPhilosophyFocus.png";
 import philosophyimgFocus2 from "../assets/investmentPhilosophyFocus2.png";
 import investment_philosophy from "../assets/investment_philosophy@2x.png";
 
-export class Investphilosphyinfo extends Component {
+class Investphilosphyinfo extends Component {
   componentDidMount() {
     new WOW.WOW().init();
     window.scrollTo(0, 0);

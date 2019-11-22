@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../css/style.css";
 // import '../css/footer.css';
 
-export class Footer extends Component {
+class Footer extends Component {
   render() {
     return (
       <footer class="page-footer-section">

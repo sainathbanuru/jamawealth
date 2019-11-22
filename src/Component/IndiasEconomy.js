@@ -17,7 +17,7 @@ import WOW from "wowjs";
 import Introsection from "./Introsection";
 import FeatureSection from "./featureSection";
 
-export class IndiasEconomy extends Component {
+class IndiasEconomy extends Component {
   componentDidMount() {
     new WOW.WOW().init();
     // window.scrollTo(0, 0);

@@ -13,7 +13,7 @@ import philosophyimg from "../assets/philosophyimg.jpg";
 import fivetrillioneconomy from "../assets/fivetrillioneconomy.png";
 import philosophyimgFocus2 from "../assets/investmentPhilosophyFocus2.png";
 import AllocateBanner from "../assets/asset_allocation@2x.png";
-export class HowToAllocate extends Component {
+class HowToAllocate extends Component {
   componentDidMount() {
     new WOW.WOW().init();
     window.scrollTo(0, 0);

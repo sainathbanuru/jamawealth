@@ -14,7 +14,7 @@ import philosophyimgFocus from "../assets/investmentPhilosophyFocus.png";
 import philosophyimgFocus2 from "../assets/investmentPhilosophyFocus2.png";
 import MagicBanner from "../assets/compounding@2x.png";
 
-export class SheerMagicArticle extends Component {
+class SheerMagicArticle extends Component {
   componentDidMount() {
     new WOW.WOW().init();
     window.scrollTo(0, 0);

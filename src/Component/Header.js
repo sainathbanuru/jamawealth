@@ -4,7 +4,7 @@ import { Link, NavLink, BrowserRouter as Router } from "react-router-dom";
 import "../css/style.css";
 import Sidebar from "./Sidebar";
 
-export class Header extends Component {
+class Header extends Component {
   render() {
     return (
       <div>

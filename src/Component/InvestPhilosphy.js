@@ -16,7 +16,7 @@ import Introsection from "./Introsection";
 import WOW from "wowjs";
 import FeatureSection from "./featureSection";
 
-export class InvestPhilosphy extends Component {
+class InvestPhilosphy extends Component {
   componentDidMount() {
     new WOW.WOW().init();
     // window.scrollTo(0, 0);

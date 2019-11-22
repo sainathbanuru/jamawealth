@@ -11,7 +11,7 @@ import WOW from "wowjs";
 import aboutimg from "../assets/aboutimg.svg";
 import sheerimg from "../assets/sheerimg.svg";
 
-export class SheerMagicinfo extends Component {
+class SheerMagicinfo extends Component {
   componentDidMount() {
     new WOW.WOW().init();
     window.scrollTo(0, 0);

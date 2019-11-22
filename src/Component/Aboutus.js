@@ -14,7 +14,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import WOW from "wowjs";
 
-export class Aboutus extends Component {
+class Aboutus extends Component {
   componentDidMount() {
     new WOW.WOW().init();
     window.scrollTo(0, 0);

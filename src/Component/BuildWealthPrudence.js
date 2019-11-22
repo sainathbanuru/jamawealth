@@ -16,7 +16,7 @@ import startimgyllo from "../assets/startimgyllo.png";
 import WOW from "wowjs";
 import Introsection from "./Introsection";
 
-export class BuildWealthPrudence extends Component {
+class BuildWealthPrudence extends Component {
   componentDidMount() {
     new WOW.WOW().init();
     // window.scrollTo(0, 0);

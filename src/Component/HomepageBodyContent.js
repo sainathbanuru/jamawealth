@@ -21,7 +21,7 @@ import homegraph from "../assets/homegraph.svg";
 import videosectionbg from "../assets/videosectionbg.svg";
 import testimonialbrcard from "../assets/testimonial-brcard.svg";
 
-export class HomepageBodyContent extends Component {
+class HomepageBodyContent extends Component {
   render() {
     return (
       <div class="homepage-body-bg">

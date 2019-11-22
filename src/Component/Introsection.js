@@ -4,7 +4,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import "../css/Introsection.css";
 import { Link, NavLink, BrowserRouter as Router } from "react-router-dom";
 
-export class Introsection extends Component {
+class Introsection extends Component {
   constructor(props) {
     super(props);
     this.state = { show: true };

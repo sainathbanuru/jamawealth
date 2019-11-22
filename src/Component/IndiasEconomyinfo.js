@@ -9,7 +9,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Downladebook from "./Downladebook";
 
-export class IndiasEconomyinfo extends Component {
+class IndiasEconomyinfo extends Component {
   render() {
     return (
       <div>

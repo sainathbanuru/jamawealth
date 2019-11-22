@@ -14,7 +14,7 @@ import howjamaimgyllo from "../assets/howjamaimgyllo.png";
 import startimgblk from "../assets/startimgblk.png";
 import WOW from "wowjs";
 
-export class StartWealthCreation extends Component {
+class StartWealthCreation extends Component {
   componentDidMount() {
     new WOW.WOW().init();
     window.scrollTo(0, 0);

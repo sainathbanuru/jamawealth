@@ -20,7 +20,7 @@ import Header from "./Header";
 import Tab from "./Tab";
 import WOW from "wowjs";
 
-export class Values extends Component {
+class Values extends Component {
   componentDidMount() {
     new WOW.WOW().init();
     window.scrollTo(0, 0);

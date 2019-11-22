@@ -18,7 +18,7 @@ import WOW from "wowjs";
 
 import FeatureSection from "./featureSection";
 
-export class Homepage extends Component {
+class Homepage extends Component {
   componentDidMount() {
     new WOW.WOW().init();
     window.scrollTo(0, 0);
