@@ -30,18 +30,18 @@ export class Aboutus extends Component {
             <div class="row valign-wrapper">
               <div class="col s12 m6 offset-m3">
                 <div class="jars-section-title-heading">
-                  <h4>
+                  {/* <h4>
                     <b>Investment Philosophy</b>
-                  </h4>
+                  </h4> */}
                 </div>
                 <div
                   class="about-philosophy-left-content center-align wow fadeIn"
                   data-wow-delay="0.4s"
                 >
                   <p>
-                    Roots & Wings. Roots preserve wealth with low debt,
-                    consistent ROE/ROCE businesses with promoter integrity.
-                    Wings identify growing companies (sales/profit/cashflows).
+                    Jamā Wealth is unique wealth advisory that puts more wealth
+                    in your hands. Because there are no hidden or indirect
+                    costs, our unbiased advice works better.
                   </p>
                 </div>
               </div>

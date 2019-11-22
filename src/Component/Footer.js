@@ -9,7 +9,7 @@ export class Footer extends Component {
         <div class="row m-0">
           <div class="col m10 offset-m1">
             <div class="row">
-              <div class="col m3 s12 m-t-20">
+              <div class="col m4 s12 m-t-20">
                 <h6 class="footer-titles">Contact Us</h6>
                 <ul>
                   <li>
@@ -37,9 +37,9 @@ export class Footer extends Component {
                   </ul>
                 </div> */}
               </div>
-              <div class="col m3 s12 m-t-20">
-                <h6 class="footer-titles">Customer Service</h6>
-                {/* <ul>
+              {/* <div class="col m3 s12 m-t-20">
+                <h6 class="footer-titles">Customer Service</h6> */}
+              {/* <ul>
                   {/* <li>
                     <a href="#!">Contact Us</a>
                   </li> 
@@ -59,7 +59,7 @@ export class Footer extends Component {
                     <a href="#!">FAQ</a>
                   </li>
                 </ul> */}
-                <ul>
+              {/* <ul>
                   <li>
                     <a href="#!">Brochure</a>
                   </li>
@@ -68,13 +68,13 @@ export class Footer extends Component {
                   </li>
                   {/* <li>
                       <a href="#!">Factsheet: Comparison MF vs JARS</a>
-                    </li> */}
+                    </li> 
                   <li>
                     <a href="#!">Comparison NPS vs JARS</a>
                   </li>
                 </ul>
-              </div>
-              <div class="col m3 s12 m-t-20">
+              </div> */}
+              <div class="col m4 s12 m-t-20">
                 <h6 class="footer-titles">Information</h6>
                 <ul>
                   <li>
@@ -91,7 +91,7 @@ export class Footer extends Component {
                   </li> */}
                 </ul>
               </div>
-              <div class="col m3 s12 m-t-20">
+              <div class="col m4 s12 m-t-20">
                 <h6 class="footer-titles">Subscribe to our Newsletter</h6>
                 {/* <p>Lorem Ipsum is simply dumszmy text of the printing and typesetting industry.</p> */}
                 <form class="example" style={{ marginTop: 14 }}>

@@ -127,25 +127,27 @@ export class StartWealthCreation extends Component {
                         </Link>
                       </div>
                       <div class="col m4 s4 no-padding tab-card-margin-style">
-                        <a
-                          href="https://www.jama.co.in/app/accounts/login/"
-                          target="_blank"
-                        >
-                          {" "}
-                          <div class="Jama-tab-card-btn jama-right-tabs valign-wrapper jama-right-tabs-active bg-white b-right">
-                            <span>
-                              <img class="mobile-show-img" src={startimgblk} />
-                            </span>
-                            <h6 class="under-line-style">
-                              Get Started{" "}
+                        <Link to="/contactus">
+                          <a target="_blank">
+                            {" "}
+                            <div class="Jama-tab-card-btn jama-right-tabs valign-wrapper jama-right-tabs-active bg-white b-right">
                               <span>
-                                <i class="material-icons start-arrows">
-                                  arrow_right_alt
-                                </i>{" "}
-                              </span>{" "}
-                            </h6>
-                          </div>{" "}
-                        </a>
+                                <img
+                                  class="mobile-show-img"
+                                  src={startimgblk}
+                                />
+                              </span>
+                              <h6 class="under-line-style">
+                                Get Started{" "}
+                                <span>
+                                  <i class="material-icons start-arrows">
+                                    arrow_right_alt
+                                  </i>{" "}
+                                </span>{" "}
+                              </h6>
+                            </div>{" "}
+                          </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

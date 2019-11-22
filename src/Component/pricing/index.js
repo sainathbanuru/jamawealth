@@ -100,7 +100,7 @@ export class Pricing extends Component {
             backgroundColor: "#f4f5fb"
           }}
         >
-          <h1 style={{ fontFamily: "Roboto", fontWeight: "bold" }}>Pricing</h1>
+          <h4 style={{ marginTop: 32 }}>Pricing</h4>
           <p id="pricing-description">
             The fees paid for the Jama Wealth Advisory & Research on Stocks
             (JARS) service is guranteed to be transparent. No other hidden

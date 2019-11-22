@@ -35,7 +35,7 @@ class Sidebar extends Component {
             <div className="divider" />
           </li>
           <li>
-            <Link to="#" class="start-btn">
+            <Link to="/contactus" class="start-btn">
               Get Started
             </Link>
           </li>
