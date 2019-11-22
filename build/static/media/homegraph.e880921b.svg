@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="897.143" height="613.538" viewBox="0 0 897.143 613.538">
+  <defs>
+    <filter id="Rectangle_950" x="0" y="0" width="897.143" height="613.538" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feFlood flood-opacity="0.071"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect width="747" height="379" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_10743" data-name="Group 10743" transform="translate(-934.226 -1391)">
+    <g transform="matrix(1, 0, 0, 1, 934.23, 1391)" filter="url(#Rectangle_950)">
+      <rect id="Rectangle_950-2" data-name="Rectangle 950" width="747.143" height="463.538" rx="20" transform="translate(75 75)" fill="#fff"/>
+    </g>
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(1009 1466)" opacity="0.05" clip-path="url(#clip-path)">
+      <g transform="translate(-1009 -1793.5)">
+        <line id="Line_62" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1772.5)">
+        <line id="Line_62-2" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1751.5)">
+        <line id="Line_62-3" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1730.5)">
+        <line id="Line_62-4" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1709.5)">
+        <line id="Line_62-5" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1688.5)">
+        <line id="Line_62-6" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1667.5)">
+        <line id="Line_62-7" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1646.5)">
+        <line id="Line_62-8" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1625.5)">
+        <line id="Line_62-9" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1604.5)">
+        <line id="Line_62-10" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1583.5)">
+        <line id="Line_62-11" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1562.5)">
+        <line id="Line_62-12" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1541.5)">
+        <line id="Line_62-13" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1520.5)">
+        <line id="Line_62-14" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1499.5)">
+        <line id="Line_62-15" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1478.5)">
+        <line id="Line_62-16" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1457.5)">
+        <line id="Line_62-17" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1436.5)">
+        <line id="Line_62-18" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+      <g transform="translate(-1009 -1415.5)">
+        <line id="Line_62-19" data-name="Line 62" x1="747" transform="translate(1009 1794)" fill="none" stroke="#1553a5" stroke-width="1"/>
+      </g>
+    </g>
+    <path id="Rectangle_946" data-name="Rectangle 946" d="M5,0H65a5,5,0,0,1,5,5V81.4a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(1099 1763.598)" fill="#b1b1b1"/>
+    <text id="Bank_FD" data-name="Bank FD" transform="translate(1105 1869)" fill="#1d294a" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Bank FD</tspan></text>
+    <path id="Rectangle_948" data-name="Rectangle 948" d="M5,0H65a5,5,0,0,1,5,5V134.571a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(1431 1710.429)" fill="#b1b1b1"/>
+    <text id="Gold" transform="translate(1450 1869)" fill="#1d294a" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">Gold</tspan></text>
+    <path id="Rectangle_947" data-name="Rectangle 947" d="M5,0H65a5,5,0,0,1,5,5V165.1a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(1265 1679.904)" fill="#b1b1b1"/>
+    <text id="NIFTY_50" data-name="NIFTY 50" transform="translate(1267 1869)" fill="#1d294a" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">NIFTY 50</tspan></text>
+    <path id="Rectangle_949" data-name="Rectangle 949" d="M5,0H65a5,5,0,0,1,5,5V262.634a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(1597 1582.366)" fill="#ffc20e"/>
+    <text id="JARS" transform="translate(1612 1869)" fill="#1d294a" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">JARS</tspan></text>
+    <line id="Line_61" data-name="Line 61" x1="747" transform="translate(1009 1845)" fill="none" stroke="#707070" stroke-width="1" opacity="0.5"/>
+    <text id="_34.3_" data-name="34.3%" transform="translate(1605 1572)" fill="#1d294a" font-size="20" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">34.3%</tspan></text>
+    <text id="_19.7_" data-name="19.7%" transform="translate(1439 1690)" fill="#1d294a" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">19.7%</tspan></text>
+    <text id="_21.4_" data-name="21.4%" transform="translate(1273 1660)" fill="#1d294a" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">21.4%</tspan></text>
+    <text id="_13.4_" data-name="13.4%" transform="translate(1107 1744)" fill="#1d294a" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">13.4%</tspan></text>
+    <text id="Returns_says_everything." data-name="Returns says
+everything." transform="translate(1029 1521)" fill="#1d294a" font-size="30" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Returns says</tspan><tspan x="0" y="40">everything.</tspan></text>
+    <rect id="Rectangle_951" data-name="Rectangle 951" width="11" height="65" transform="translate(1009 1497)" fill="#1d294a"/>
+  </g>
+</svg>
