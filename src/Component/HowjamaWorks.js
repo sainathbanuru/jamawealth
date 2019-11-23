@@ -122,7 +122,7 @@ class HowjamaWorks extends Component {
                           <span>
                             <img class="mobile-show-img" src={howjamaimgblk} />
                           </span>
-                          <h6 class="under-line-style">How Jama Works</h6>
+                          <h6 class="under-line-style">How it works</h6>
                         </div>
                       </div>
                       <div class="col m4 s4 no-padding tab-card-margin-style">
@@ -154,13 +154,11 @@ class HowjamaWorks extends Component {
                   <div class="Jama-home-tab-content-box wow fadeIn valign-wrapper">
                     <div class="row m-0 valign-wrapper">
                       <div class="col s12 m8">
-                        <h5 class="mobile-title-text">How Jama Works</h5>
+                        <h5 class="mobile-title-text">How it works</h5>
                         <p>
-                          Most good things in life are simple, yet hard. Growing
-                          & retaining wealth is simple too, right? Just invest
-                          regularly in a set of equities, and over time wealth
-                          happens. Compounded growth will silently do its work.
-                          But not quite so!
+                          Investing with Jama Wealth is easy. Invest in our high
+                          performing portfolio after selecting your preferred
+                          demat account.
                         </p>
                         <div class="read-more-btn">
                           <Link to="/HowJamaWorksInfo">

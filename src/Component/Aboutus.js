@@ -91,7 +91,7 @@ class Aboutus extends Component {
             </div>
           </div>
 
-          <div class="container w-percent-90">
+          {/* <div class="container w-percent-90">
             <div class=" jars-section-title-heading ">
               <h4>
                 <b>Team</b>
@@ -104,7 +104,7 @@ class Aboutus extends Component {
                   <h5 class="mb-0">Tarun</h5>
                   <span>AVP, Wealth Management</span>
                   <ul class="social-icon">
-                    {/* <li><img src={twitter} /> </li> */}
+                    {/* <li><img src={twitter} /> </li> 
                     <li>
                       <img src={linkedin} />
                     </li>
@@ -194,17 +194,18 @@ class Aboutus extends Component {
                     </li>
                   </ul>
                 </div>
-              </div> */}
+              </div> 
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div class=" JAR-contant-button center-align ">
           <div class=" row ">
             <div class=" col m6 offset-m3 ">
               <h5>Connect with us to know more about</h5>
-              <h3 class=" background ">
-                <span>J &nbsp; . &nbsp;A &nbsp;. &nbsp;R &nbsp;. &nbsp;S</span>
+              <h3 style={{ marginBottom: 64 }}>
+                {/* <span>J &nbsp; . &nbsp;A &nbsp;. &nbsp;R &nbsp;. &nbsp;S</span> */}
+                Jamā Wealth Advisory & Research on Stocks(JARS)
               </h3>
               <div class=" jars-btns JAR-contant-button-style ">
                 <Link to="/contactUs">

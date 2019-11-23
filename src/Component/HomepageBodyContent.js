@@ -32,7 +32,7 @@ class HomepageBodyContent extends Component {
             <div class="jars-section-title-heading" style={{ marginTop: 64 }}>
               <h4>
                 {" "}
-                JARS Model Portfolio Outperforms All Other Investment
+                Jama Wealth Model Portfolio Outperforms All Other Investment
                 Alternatives{" "}
               </h4>
             </div>
@@ -44,7 +44,9 @@ class HomepageBodyContent extends Component {
               </div>
               <div class="col s12 m12  no-padding">
                 <div class="Jars-section-left">
-                  <h4>JARS Model Equity Portfolio Over Other Asset Classes</h4>
+                  <h4>
+                    Jama Wealth Model Equity Portfolio Over Other Asset Classes
+                  </h4>
                   <p>
                     The long-term focused quality stocks portfolio of JARS has
                     outperformed bank deposits, gold and the Nifty index.

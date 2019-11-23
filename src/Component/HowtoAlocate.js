@@ -123,7 +123,7 @@ class HowtoAlocate extends Component {
                                 src={howjamaimgyllo}
                               />
                             </span>
-                            <h6 class="under-line-style">How Jama Works</h6>
+                            <h6 class="under-line-style">How it works</h6>
                           </div>
                         </Link>
                       </div>
