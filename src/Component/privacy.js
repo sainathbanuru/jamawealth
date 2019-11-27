@@ -2,12 +2,18 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import "../css/style.css";
+import {Helmet} from "react-helmet"
 
 export default class Privacy extends React.Component {
   render() {
     return (
       <div>
         <Header />
+        <Helmet>
+        <title>Privacy Policy | Jama Wealth Management & Investment Advisory </title>
+        <meta name="description" content="Privacy Policy of Jama Wealth Management & Investment Advisory. No User Data transfers, 100% privacy of portfolios">
+        </meta>
+        </Helmet>
         <div style={{ width: "90%", maxWidth: 1024, margin: "0 auto" }}>
           <div
             class="jars-section-title-heading"

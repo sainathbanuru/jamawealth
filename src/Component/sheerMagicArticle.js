@@ -39,7 +39,7 @@ class SheerMagicArticle extends Component {
               <div class="about-philosophy-left-content">
                 <h4>Unlock the magic of compounding</h4>
                 <div class="Aboutus-img-right right-align">
-                  <img class=" responsive-img" src={MagicBanner} />
+                  <img class=" responsive-img" src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/compounding%402x.png" alt="compounding_jama_wealth" />
                 </div>
                 <blockquote>
                   Most good things in life are simple, yet hard. Growing &

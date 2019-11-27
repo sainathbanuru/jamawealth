@@ -16,6 +16,7 @@ import startimgyllo from "../assets/startimgyllo.png";
 import WOW from "wowjs";
 import Introsection from "./Introsection";
 import FeatureSection from "./featureSection";
+import {Helmet} from "react-helmet";
 
 class SheerMagic extends Component {
   componentDidMount() {
@@ -27,6 +28,12 @@ class SheerMagic extends Component {
     return (
       <div>
         <Header />
+        <Helmet>
+        <title> The Magic Of Compounding | Jama Wealth Investment Advisory & Wealth Management </title>
+        <meta name="description" content="Equity investment portfolios, selected by experts and machine learning algorithms.
+For busy professionals, CXOs and business-owners.">
+</meta>
+</Helmet>
         <Introsection />
         <FeatureSection />
         <div class="Home-section-banner-img">
@@ -105,7 +112,7 @@ class SheerMagic extends Component {
                             <span>
                               <img
                                 class="mobile-show-img"
-                                src={philosophyyllo}
+                                src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/philosophyblk.png" alt="Philosophy_jama_wealth"
                               />
                             </span>
                             <h6 class="under-line-style">
@@ -133,7 +140,7 @@ class SheerMagic extends Component {
                           {" "}
                           <div class="Jama-tab-card-btn valign-wrapper jama-right-tabs bg-white b-right">
                             <span>
-                              <img class="mobile-show-img" src={startimgyllo} />
+                              <img class="mobile-show-img" src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/startimgblk.png" alt="get_started_jama_wealth"/>
                             </span>
                             <h6 class="under-line-style">
                               Get Started{" "}

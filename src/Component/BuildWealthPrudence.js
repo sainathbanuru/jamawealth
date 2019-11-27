@@ -15,6 +15,7 @@ import howjamaimgyllo from "../assets/howjamaimgyllo.png";
 import startimgyllo from "../assets/startimgyllo.png";
 import WOW from "wowjs";
 import Introsection from "./Introsection";
+import {Helmet} from "react-helmet";
 
 class BuildWealthPrudence extends Component {
   componentDidMount() {
@@ -25,6 +26,11 @@ class BuildWealthPrudence extends Component {
   render() {
     return (
       <div>
+      <Helmet>
+      <title>Build Welath With Prudence | Stock Market Advisor Service | Jamawealth </title>
+      <meta name="description" content="Build your wealth with SEBI registered stock market portfolio advisors. Jama Wealth provides a unique portfolio of stock market with clinical results" >
+      </meta>
+      </Helmet>
         <Header />
         <Introsection />
         <div class="Home-section-banner-img">
@@ -106,7 +112,7 @@ class BuildWealthPrudence extends Component {
                             <span>
                               <img
                                 class="mobile-show-img"
-                                src={philosophyyllo}
+                                src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/philosophyblk.png" alt="philosophy_jama_wealth"
                               />
                             </span>
                             <h6 class="under-line-style">
@@ -137,7 +143,7 @@ class BuildWealthPrudence extends Component {
                               <span>
                                 <img
                                   class="mobile-show-img"
-                                  src={startimgyllo}
+                                  src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/startimgblk.png" alt="jama_wealth"
                                 />
                               </span>
                               <h6 class="under-line-style">

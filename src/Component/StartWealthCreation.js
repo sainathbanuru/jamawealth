@@ -103,7 +103,7 @@ class StartWealthCreation extends Component {
                             <span>
                               <img
                                 class="mobile-show-img"
-                                src={philosophyyllo}
+                                src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/philosophyblk.png" alt="Philosophy_jamawealth"
                               />
                             </span>
                             <h6 class="under-line-style">
@@ -134,7 +134,7 @@ class StartWealthCreation extends Component {
                               <span>
                                 <img
                                   class="mobile-show-img"
-                                  src={startimgblk}
+                                  src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/startimgblk.png" alt="get_started_jamawealth"
                                 />
                               </span>
                               <h6 class="under-line-style">

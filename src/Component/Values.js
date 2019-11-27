@@ -19,6 +19,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Tab from "./Tab";
 import WOW from "wowjs";
+import {Helmet} from "react-helmet";
 
 class Values extends Component {
   componentDidMount() {
@@ -29,6 +30,11 @@ class Values extends Component {
   render() {
     return (
       <div>
+      <Helmet>
+      <title> Our Values | Jama Wealth Stock Market Portfolio Management</title>
+      <meta name="description" content="Jama Wealth Management offers stock market portfolio for building wealth with prudence. Our Values make sure the portfolio is clinical every time we rebalnce it.">
+       </meta>
+       </Helmet>
         <Header />
 
         <div class="jars-section top-content-section value-top-section valign-wrapper">

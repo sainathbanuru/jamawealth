@@ -38,7 +38,7 @@ class HowToAllocate extends Component {
               <div class="about-philosophy-left-content">
                 <h4>Asset Allocation</h4>
                 <div class="Aboutus-img-right right-align">
-                  <img class=" responsive-img" src={AllocateBanner} />
+                  <img class=" responsive-img" src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/asset_allocation%402x.png" alt="asser_allocation_jama_wealth" />
                 </div>
 
                 {/* <blockquote>

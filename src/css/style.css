@@ -145,7 +145,7 @@ nav ul a:hover {
 }
 
 .Home-section-banner-img {
-  background-image: url("../assets/jarsBanner.png");
+  background-image: url("https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/jarsBanner.png");
   /* position: relative; */
   background-size: cover;
   min-height: 100vh;

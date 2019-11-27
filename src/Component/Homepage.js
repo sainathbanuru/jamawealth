@@ -110,7 +110,7 @@ class Homepage extends Component {
                       <div class="col m4 s4 no-padding tab-card-margin-style">
                         <div class="Jama-tab-card-btn valign-wrapper jama-right-tabs jama-right-tabs-active bg-white m-r-4 b-left">
                           <span>
-                            <img class="mobile-show-img" src={philosophyblk} />
+                            <img class="mobile-show-img" src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/philosophyblk.png" alt="Philosophy_jama_wealth"/>
                           </span>
                           <h6 class="under-line-style">
                             Investment Philosophy
@@ -139,7 +139,7 @@ class Homepage extends Component {
                               <span>
                                 <img
                                   class="mobile-show-img"
-                                  src={startimgyllo}
+                                  src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/startimgblk.png" alt="jamawealth"
                                 />
                               </span>
                               <h6 class="under-line-style">

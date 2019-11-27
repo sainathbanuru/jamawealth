@@ -3,6 +3,7 @@ import "./pricing.css";
 import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 const plan1 = [
   {
@@ -90,7 +91,11 @@ class Pricing extends Component {
     return (
       <div>
         <Header />
-
+<Helmet>
+<title> Pricing | Jama Wealth Stock Portfolio Management Services </title>
+<meta name="description" content="We price our wealth management services specially of stock market very cleanly, we dont have any hidden charges, there is no lock in period either.">
+</meta>
+</Helmet>
         <div
           style={{
             textAlign: "center",

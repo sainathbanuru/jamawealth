@@ -15,6 +15,7 @@ import startimgyllo from "../assets/startimgyllo.png";
 import Introsection from "./Introsection";
 import WOW from "wowjs";
 import FeatureSection from "./featureSection";
+import {Helmet} from "react-helmet"
 
 class InvestPhilosphy extends Component {
   componentDidMount() {
@@ -26,6 +27,12 @@ class InvestPhilosphy extends Component {
     return (
       <div>
         <Header />
+        <Helmet>
+        <title> Investment Philosophy | Jama Wealth Management & Investment Advisory </title>
+        <meta name="Description" content="Equity investment portfolios, selected by experts and machine learning algorithms.
+For busy professionals, CXOs and business-owners.">
+</meta>
+</Helmet>
         <Introsection />
         <FeatureSection />
         <div class="Home-section-banner-img">
@@ -104,7 +111,7 @@ class InvestPhilosphy extends Component {
                       <div class="col m4 s4 no-padding tab-card-margin-style">
                         <div class="Jama-tab-card-btn valign-wrapper jama-right-tabs jama-right-tabs-active bg-white m-r-4 b-left">
                           <span>
-                            <img class="mobile-show-img" src={philosophyblk} />
+                            <img class="mobile-show-img" src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/philosophyblk.png" alt="Philosophy_jama_wealth"/>
                           </span>
                           <h6 class="under-line-style">
                             Investment Philosophy
@@ -133,7 +140,7 @@ class InvestPhilosphy extends Component {
                               <span>
                                 <img
                                   class="mobile-show-img"
-                                  src={startimgyllo}
+                                  src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/startimgblk.png" alt="get_started_jama_wealth"
                                 />
                               </span>
                               <h6 class="under-line-style">

@@ -16,6 +16,7 @@ import startimgyllo from "../assets/startimgyllo.png";
 import WOW from "wowjs";
 import Introsection from "./Introsection";
 import FeatureSection from "./featureSection";
+import {Helmet} from "react-helmet"
 
 class HowjamaWorks extends Component {
   componentDidMount() {
@@ -26,6 +27,12 @@ class HowjamaWorks extends Component {
     return (
       <div>
         <Header />
+        <Helmet>
+        <title> Jama Wealth | How Jama Welath Works </title>
+        <meta name="description" content="Equity investment portfolios, selected by experts and machine learning algorithms.
+For busy professionals, CXOs and business-owners.">
+</meta>
+</Helmet>
         <Introsection />
         <FeatureSection />
 
@@ -108,7 +115,7 @@ class HowjamaWorks extends Component {
                             <span>
                               <img
                                 class="mobile-show-img"
-                                src={philosophyyllo}
+                                src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/philosophyblk.png" alt="Philosophy_jama_wealth"
                               />
                             </span>
                             <h6 class="under-line-style">
@@ -133,7 +140,7 @@ class HowjamaWorks extends Component {
                               <span>
                                 <img
                                   class="mobile-show-img"
-                                  src={startimgyllo}
+                                  src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/startimgblk.png" alt="get_started_jama_wealth"
                                 />
                               </span>
                               <h6 class="under-line-style">

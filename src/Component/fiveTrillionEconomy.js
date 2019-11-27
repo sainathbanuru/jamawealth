@@ -13,6 +13,7 @@ import philosophyimg from "../assets/philosophyimg.jpg";
 import fivetrillioneconomy from "../assets/fivetrillioneconomy.png";
 import philosophyimgFocus2 from "../assets/investmentPhilosophyFocus2.png";
 import BannerImage from "../assets/5trillion@2x.png";
+import {Helmet} from "react-helmet"
 
 class Investphilosphyinfo extends Component {
   componentDidMount() {
@@ -23,6 +24,11 @@ class Investphilosphyinfo extends Component {
     return (
       <div>
         <Header />
+        <Helmet>
+        <title> Benefiting From India’s 5 Trillion Dollar Economy | Jama Wealth </title>
+        <meta name="description" content="Since we all love compounding, this will only snowball favourably for the Indian economy. Yes, a $5 Trillion economy is only a matter a time.">
+        </meta>
+        </Helmet>
 
         <div class="jars-section">
           <div class="row">
@@ -39,7 +45,7 @@ class Investphilosphyinfo extends Component {
               <div class="about-philosophy-left-content">
                 <h4>Benefiting from India’s $5 Trillion Economy</h4>
                 <div class="Aboutus-img-right right-align">
-                  <img class=" responsive-img" src={BannerImage} />
+                  <img class=" responsive-img" src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/5trillion%402x.png" alt="5_trillion_indian_economy_jama_wealth"/>
                 </div>
                 <p>
                   The remarkable thing about India’s economy is that it has

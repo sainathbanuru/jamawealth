@@ -30,7 +30,7 @@ class Jamaadvisorypage extends Component {
                   class="jamadvisory-img-right wow fadeInUp"
                   data-wow-delay="0.1s"
                 >
-                  <img class=" responsive-img" src={jamaadvisory} />
+                  <img class=" responsive-img" src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/jamaadvisory.png" />
                 </div>
               </div>
               <div class="col s12 m12 pull-m6">
@@ -94,7 +94,7 @@ class Jamaadvisorypage extends Component {
                   type specimen book Lorem
                 </p>
                 <div class="jama-key-stats-img wow fadeInUp">
-                  <img class=" responsive-img" src={keystatsimg} />
+                  <img class=" responsive-img" src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/keystatsimg.jpg" alt="key_stats_Jama_wealth"/>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ class Jamaadvisorypage extends Component {
                   class="jama-advice-how-we-perform-img wow fadeInUp"
                   data-wow-delay="0.1s"
                 >
-                  <img src={howweperformimg} />
+                  <img src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/howweperformimg.jpg" alt="Jars_performace_graph_jama_wealth"/>
                 </div>
               </div>
               <div class="col s12 m12 pull-m6">
@@ -146,7 +146,7 @@ class Jamaadvisorypage extends Component {
                   class="jama-advice-how-we-perform-img wow fadeInUp"
                   data-wow-delay="0.4s"
                 >
-                  <img src={OurModelPortfolio} />
+                  <img src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/OurModelPortfolio.jpg" />
                 </div>
               </div>
 

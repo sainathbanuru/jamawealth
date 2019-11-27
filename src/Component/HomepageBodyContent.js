@@ -39,7 +39,7 @@ class HomepageBodyContent extends Component {
             <div class="row valign-wrapper">
               <div class="col s12 m12  no-padding">
                 <div class="Jar-graph-img wow fadeIn">
-                  <img src={Jargraph} />
+                  <img src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/jargraph.png" alt="jamawealth_graph" />
                 </div>
               </div>
               <div class="col s12 m12  no-padding">
@@ -89,7 +89,7 @@ class HomepageBodyContent extends Component {
               </div>
               <div class="col m12 l6">
                 <div class="Jar-graph-img wow fadeIn">
-                  <img src={niftimg} />
+                  <img src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/niftimg.png" alt="nifty_vs_jama_wealth"/>
                 </div>
               </div>
             </div>
@@ -281,16 +281,16 @@ class HomepageBodyContent extends Component {
           </div>
           <div className="featuredImageContainer">
             <img
-              src={
+              src=
                 "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/entrepreneur_india.png"
-              }
+              
               style={{ objectFit: "cover" }}
               alt="Entrepreneur India"
               className="featuredImages"
             />
             <img
               src={
-                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/qrius.png"
+                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/qrius.png" 
               }
               style={{ objectFit: "cover" }}
               alt="Qrius"
@@ -298,7 +298,7 @@ class HomepageBodyContent extends Component {
             />
             <img
               src={
-                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/money_control.png"
+                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/money_control.png" 
               }
               style={{ objectFit: "cover" }}
               alt="Money Control"
@@ -306,7 +306,7 @@ class HomepageBodyContent extends Component {
             />
             <img
               src={
-                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/silicon_india.png"
+                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/silicon_india.png" 
               }
               style={{ objectFit: "cover" }}
               alt="Silicon India"
@@ -314,7 +314,7 @@ class HomepageBodyContent extends Component {
             />
             <img
               src={
-                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/the_afternoon.png"
+                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/the_afternoon.png" 
               }
               style={{ objectFit: "cover" }}
               alt="The Afternoon"
@@ -372,8 +372,8 @@ class HomepageBodyContent extends Component {
                         <img
                           class="profile-pic"
                           src={
-                            "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/new/static/img/Image+5.png"
-                          }
+                            "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/new/static/img/Image+5.png" 
+                          } alt ="jama_wealth_review"
                         />
                       </div>
 
