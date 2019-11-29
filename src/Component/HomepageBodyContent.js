@@ -20,6 +20,9 @@ import niftimg from "../assets/niftimg.png";
 import homegraph from "../assets/homegraph.svg";
 import videosectionbg from "../assets/videosectionbg.svg";
 import testimonialbrcard from "../assets/testimonial-brcard.svg";
+import Jarwebp from "../assets/jargraph.webp";
+import NiftImage from "../assets/niftimg.webp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 class HomepageBodyContent extends Component {
   render() {
@@ -39,7 +42,7 @@ class HomepageBodyContent extends Component {
             <div class="row valign-wrapper">
               <div class="col s12 m12  no-padding">
                 <div class="Jar-graph-img wow fadeIn">
-                  <img src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/jargraph.png" alt="jamawealth_graph" />
+                  <LazyLoadImage src={Jarwebp} alt="jamawealth_graph" />
                 </div>
               </div>
               <div class="col s12 m12  no-padding">
@@ -89,7 +92,7 @@ class HomepageBodyContent extends Component {
               </div>
               <div class="col m12 l6">
                 <div class="Jar-graph-img wow fadeIn">
-                  <img src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/niftimg.png" alt="nifty_vs_jama_wealth"/>
+                  <LazyLoadImage src={NiftImage} alt="nifty_vs_jama_wealth" />
                 </div>
               </div>
             </div>
@@ -121,7 +124,7 @@ class HomepageBodyContent extends Component {
                 >
                   <div class="row valign-wrapper" style={{ marginBottom: 0 }}>
                     <div class="col s3 no-padding">
-                      <img
+                      <LazyLoadImage
                         class="curators-profile-img responsive-img"
                         src={Manoj2x}
                       />
@@ -136,7 +139,7 @@ class HomepageBodyContent extends Component {
                               href="https://www.linkedin.com/in/manoj-trivedi-a517b014/"
                               target="_blank"
                             >
-                              <img src={linkedin} />
+                              <LazyLoadImage src={linkedin} />
                             </a>
                           </span>
                         </h6>
@@ -179,7 +182,7 @@ class HomepageBodyContent extends Component {
                 >
                   <div class="row valign-wrapper" style={{ marginBottom: 0 }}>
                     <div class="col s3 no-padding">
-                      <img
+                      <LazyLoadImage
                         class="curators-profile-img responsive-img"
                         src={Ram2x}
                       />
@@ -194,7 +197,7 @@ class HomepageBodyContent extends Component {
                               href="https://www.linkedin.com/in/rammedury/"
                               target="_blank"
                             >
-                              <img src={linkedin} />
+                              <LazyLoadImage src={linkedin} />
                             </a>
                           </span>
                         </h6>
@@ -266,7 +269,7 @@ class HomepageBodyContent extends Component {
               </div>
             </div>
             <div class="video-section-bg">
-              <img src={videosectionbg} />
+              <LazyLoadImage src={videosectionbg} />
             </div>
           </div>
         </div>
@@ -280,41 +283,39 @@ class HomepageBodyContent extends Component {
             </div>
           </div>
           <div className="featuredImageContainer">
-            <img
-              src=
-                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/entrepreneur_india.png"
-              
+            <LazyLoadImage
+              src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/entrepreneur_india.png"
               style={{ objectFit: "cover" }}
               alt="Entrepreneur India"
               className="featuredImages"
             />
-            <img
+            <LazyLoadImage
               src={
-                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/qrius.png" 
+                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/qrius.png"
               }
               style={{ objectFit: "cover" }}
               alt="Qrius"
               className="featuredImages"
             />
-            <img
+            <LazyLoadImage
               src={
-                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/money_control.png" 
+                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/money_control.png"
               }
               style={{ objectFit: "cover" }}
               alt="Money Control"
               className="featuredImages"
             />
-            <img
+            <LazyLoadImage
               src={
-                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/silicon_india.png" 
+                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/silicon_india.png"
               }
               style={{ objectFit: "cover" }}
               alt="Silicon India"
               className="featuredImages"
             />
-            <img
+            <LazyLoadImage
               src={
-                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/the_afternoon.png" 
+                "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/the_afternoon.png"
               }
               style={{ objectFit: "cover" }}
               alt="The Afternoon"
@@ -328,7 +329,7 @@ class HomepageBodyContent extends Component {
             <div class="row valign-wrapper">
               <div class="col s12 m12 push-m6">
                 <div class="portfolio-img-section wow fadeIn">
-                  <img src={Group2284} />
+                  <LazyLoadImage src={Group2284} />
                 </div>
               </div>
               <div class="col s12 m12 pull-m6">
@@ -369,11 +370,12 @@ class HomepageBodyContent extends Component {
                   <div class="Testimonial-profile">
                     <div class="row valign-wrapper testimonial-section-profile-details">
                       <div class="testimonial-pic-section">
-                        <img
+                        <LazyLoadImage
                           class="profile-pic"
                           src={
-                            "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/new/static/img/Image+5.png" 
-                          } alt ="jama_wealth_review"
+                            "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/new/static/img/Image+5.png"
+                          }
+                          alt="jama_wealth_review"
                         />
                       </div>
 
@@ -401,7 +403,7 @@ class HomepageBodyContent extends Component {
                   <div class="Testimonial-profile">
                     <div class="row valign-wrapper testimonial-section-profile-details">
                       <div class="testimonial-pic-section">
-                        <img
+                        <LazyLoadImage
                           class="profile-pic"
                           src={
                             "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/new/static/img/Image+6.png"
@@ -433,7 +435,7 @@ class HomepageBodyContent extends Component {
                   <div class="Testimonial-profile">
                     <div class="row valign-wrapper testimonial-section-profile-details">
                       <div class="testimonial-pic-section">
-                        <img
+                        <LazyLoadImage
                           class="profile-pic"
                           src={
                             "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/new/static/img/Image+7.png"
