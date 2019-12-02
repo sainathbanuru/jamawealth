@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0802c55770e368862670288318abc2bf",
+    "revision": "b5d79dd023db0fe28ddb7ceb594e5b16",
     "url": "/index.html"
   },
   {
-    "revision": "afe761c3ea88e83e44f1",
+    "revision": "c1b86b09ad2e4ef24a07",
     "url": "/static/css/2.7d36abf2.chunk.css"
   },
   {
-    "revision": "c4e5f3f01f4194b17462",
-    "url": "/static/css/main.6c856b73.chunk.css"
+    "revision": "9f85de6cc802d01c7d96",
+    "url": "/static/css/main.506e3a68.chunk.css"
   },
   {
-    "revision": "afe761c3ea88e83e44f1",
-    "url": "/static/js/2.92d006c9.chunk.js"
+    "revision": "c1b86b09ad2e4ef24a07",
+    "url": "/static/js/2.bb4cb83e.chunk.js"
   },
   {
-    "revision": "c4e5f3f01f4194b17462",
-    "url": "/static/js/main.e0d42349.chunk.js"
+    "revision": "9f85de6cc802d01c7d96",
+    "url": "/static/js/main.2cdd0a63.chunk.js"
   },
   {
     "revision": "08fc46affaeed5a44c88",
@@ -168,6 +168,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/jargraph.a969a1cb.png"
   },
   {
+    "revision": "e901d23533451b93b0c8fce7eb6c3034",
+    "url": "/static/media/jargraph.e901d235.webp"
+  },
+  {
+    "revision": "3ba1f4bbacea1f80f0ab2835ae31e39a",
+    "url": "/static/media/jarsBanner.3ba1f4bb.webp"
+  },
+  {
     "revision": "dc396b27cbf98cc335a08e0ccbda0e13",
     "url": "/static/media/keystatsimg.dc396b27.jpg"
   },
@@ -190,6 +198,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bb2dcbb025fadfb0d51367b3fa4db66c",
     "url": "/static/media/magic-wand.bb2dcbb0.svg"
+  },
+  {
+    "revision": "7e81fa9f5e0319c772380b2fa6034577",
+    "url": "/static/media/niftimg.7e81fa9f.webp"
   },
   {
     "revision": "841eac3ff6544aed1b49033c0afbc757",
@@ -250,6 +262,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "180b45e8afaa33a1de32704463adc453",
     "url": "/static/media/team2.180b45e8.JPG"
+  },
+  {
+    "revision": "4c33f255dc3ac19e03b944a0e0385ac5",
+    "url": "/static/media/test.4c33f255.webp"
   },
   {
     "revision": "e2fb8c821e62f89997a0a048b9385926",
