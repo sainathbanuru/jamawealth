@@ -207,7 +207,7 @@ class Aboutus extends Component {
 
         <div class=" JAR-contant-button center-align ">
           <div class=" row ">
-            <div class=" col m6 offset-m3 ">
+            <div class=" col m12 ">
               <h5>Connect with us to know more about</h5>
               <h3 style={{ marginBottom: 64 }}>
                 {/* <span>J &nbsp; . &nbsp;A &nbsp;. &nbsp;R &nbsp;. &nbsp;S</span> */}

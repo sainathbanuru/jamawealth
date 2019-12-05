@@ -42,7 +42,13 @@ class HomepageBodyContent extends Component {
             <div class="row valign-wrapper">
               <div class="col s12 m12  no-padding">
                 <div class="Jar-graph-img wow fadeIn">
-                  <LazyLoadImage src={Jarwebp} alt="jamawealth_graph" />
+                <picture>
+                <source srcset={Jarwebp} type="image/webp" />
+                <LazyLoadImage src={Jargraph} alt="jamawealth_graph" />
+                
+                
+                </picture>
+                  
                 </div>
               </div>
               <div class="col s12 m12  no-padding">
@@ -92,7 +98,10 @@ class HomepageBodyContent extends Component {
               </div>
               <div class="col m12 l6">
                 <div class="Jar-graph-img wow fadeIn">
-                  <LazyLoadImage src={NiftImage} alt="nifty_vs_jama_wealth" />
+                <picture>
+                <source srcset={NiftImage} type="image/webp" />
+                  <LazyLoadImage src={niftimg} alt="nifty_vs_jama_wealth" />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -245,7 +254,7 @@ class HomepageBodyContent extends Component {
                   <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/lNZEWlkBdE0"
+                    src="https://www.youtube.com/embed/lNZEWlkBdE0?rel=0"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
@@ -260,7 +269,7 @@ class HomepageBodyContent extends Component {
                   <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/UC6N94FWDmo"
+                    src="https://www.youtube.com/embed/UC6N94FWDmo?rel=0"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
