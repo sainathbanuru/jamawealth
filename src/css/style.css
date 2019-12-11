@@ -455,6 +455,16 @@ span i {
   margin-top: 25px;
 }
 
+.jama-testimonials-vcards {
+  
+  min-height: 600px;
+  min-width: 80px;
+  border-radius: 4px;
+  padding: 16px;
+  position: relative;
+  margin-top: 25px;
+}
+
 .testimonial-text {
   font-family: Roboto;
   color: #000;
