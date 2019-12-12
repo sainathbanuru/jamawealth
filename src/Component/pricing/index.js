@@ -4,6 +4,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Cal from "../../assets/cal.png";
 
 const plan1 = [
   {
@@ -261,92 +262,36 @@ class Pricing extends Component {
             alignItems: "center"
           }}
         >
-          <div id="pricingTable">
-            <table id="pricingTableExample" border="0">
-              <tr style={{ borderBottom: 0 }}>
-                <td style={{ padding: 0 }}>
-                  <p style={{ margin: 0, fontWeight: "bold" }}>Example</p>
-                </td>
-                <td style={{ padding: 0 }}>: Plan A3</td>
-              </tr>
-              <tr style={{ borderBottom: 0 }}>
-                <td style={{ padding: 0 }}>
-                  <p style={{ margin: 0, fontWeight: "bold" }}>
-                    Investment Advisory
-                  </p>
-                </td>
-                <td style={{ padding: 0 }}>: ₹ 50,00,000</td>
-              </tr>
-              <tr style={{ borderBottom: 0 }}>
-                <td style={{ padding: 0 }}>
-                  <p style={{ margin: 0, fontWeight: "bold" }}>Advisory Fee</p>
-                </td>
-                <td style={{ padding: 0 }}>
-                  : ₹ 1,00,000{" "}
-                  <span style={{ color: "#747477", fontSize: "12px" }}>
-                    i.e, 2% of investment amount
-                  </span>
-                </td>
-              </tr>
-              <tr style={{ borderBottom: 0 }}>
-                <td style={{ padding: 0 }}>
-                  <p style={{ margin: 0, fontWeight: "bold" }}>Hurdle %</p>
-                </td>
-                <td style={{ padding: 0 }}>: 15%</td>
-              </tr>
-              <tr style={{ borderBottom: 0 }}>
-                <td style={{ padding: 0 }}>
-                  <p style={{ margin: 0, fontWeight: "bold" }}>Hurdle Amount</p>
-                </td>
-                <td style={{ padding: 0 }}>: ₹ 7,50,000</td>
-              </tr>
-              <tr style={{ borderBottom: 0 }}>
-                <td style={{ padding: 0 }}>
-                  <p style={{ margin: 0, fontWeight: "bold" }}>
-                    Actual gain at the end of the 1 year
-                  </p>
-                </td>
-                <td style={{ padding: 0 }}>
-                  : ₹ 9,00,000{" "}
-                  <span style={{ color: "#747477", fontSize: "12px" }}>
-                    assuming 18% annual gain.
-                  </span>
-                </td>
-              </tr>
-              <tr style={{ borderBottom: 0 }}>
-                <td style={{ padding: 0 }}>
-                  <p style={{ margin: 0, fontWeight: "bold" }}>
-                    Extra gain above hurdel
-                  </p>
-                </td>
-                <td style={{ padding: 0 }}>: ₹ 1,50,000</td>
-              </tr>
-              <tr style={{ borderBottom: 0 }}>
-                <td style={{ padding: 0 }}>
-                  <p style={{ margin: 0, fontWeight: "bold" }}>
-                    Performance Fee @20%
-                  </p>
-                </td>
-                <td style={{ padding: 0 }}>: ₹ 30,000</td>
-              </tr>
-            </table>
+          <div
+            style={{
+              textAlign: "center",
+              alignItems: "center",
+              padding: "10px 0 10px 0",
+              // padding: "100px 0",
+              backgroundColor: "#f4f5fb"
+            }}
+          >
+            <h4 style={{ marginTop: 32 }}>Example: Plan A3</h4>
           </div>
         </div>
+
+        <img
+          style={{
+            width: "70%",
+            height: "auto",
+            margin: "16px auto",
+            display: "flex"
+          }}
+          src={Cal}
+        />
 
         <div class=" research-invest-section ">
           <div class=" row ">
             <div class=" col s12 m6 offset-m3 ">
-              <div class=" research-invest-section-content ">
-                <h4 style={{ lineHeight: 1.5 }}>
-                  Too Busy To Track Investments? Not Able To Take Timely
-                  Portfolio Action?
-                </h4>
-                <p>
-                  As a busy professional or a businessman, we know that your
-                  primary focus is where it should be. Delegate the day to day
-                  tracking of your investment portfolio to a trusted advisor who
-                  helps grow your wealth with Seven Clean Operating Principles.
-                </p>
+              <div
+                class=" research-invest-section-content "
+                style={{ padding: 0 }}
+              >
                 <div class=" research-invest-btn-section ">
                   <Link to="/contactus">
                     <a class="waves-effect waves-light btn btn-large btn-orange m-r-15">
