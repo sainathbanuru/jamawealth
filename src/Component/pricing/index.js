@@ -271,7 +271,7 @@ class Pricing extends Component {
               backgroundColor: "#f4f5fb"
             }}
           >
-            <h4 style={{ marginTop: 32 }}>Example: Plan A3</h4>
+            <h4>Example: Plan A3</h4>
           </div>
         </div>
 
