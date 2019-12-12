@@ -40,14 +40,20 @@ class Header extends Component {
               </li>
               {/* <li><Link to="/testimonial" class="active">Testimonials</Link></li> */}
               <li>
-                <Link to="/app/accounts/login/" class="login-btn">
+                <a
+                  href="https://www.jamawealth.com/app/accounts/login/"
+                  class="login-btn"
+                >
                   Login
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/app/accounts/signup/" class="start-btn">
+                <a
+                  href="https://www.jamawealth.com/app/accounts/signup/"
+                  class="start-btn"
+                >
                   Get Started
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
