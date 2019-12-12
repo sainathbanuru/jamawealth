@@ -3,26 +3,26 @@ import "./pricing.css";
 import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const plan1 = [
   {
     option: "A1",
     mgmt: "1.00 %",
     hurdle: "6.00 %",
-    performace: "20.00 %"
+    performance: "20.00 %"
   },
   {
     option: "A2",
     mgmt: "1.50 %",
     hurdle: "10.00 %",
-    performace: "20.00 %"
+    performance: "20.00 %"
   },
   {
     option: "A3",
     mgmt: "2.00 %",
     hurdle: "15.00 %",
-    performace: "20.00 %"
+    performance: "20.00 %"
   }
 ];
 
@@ -31,19 +31,19 @@ const plan2 = [
     option: "T3",
     mgmt: "5.50 %",
     hurdle: "50.00 %",
-    performace: "20.00 %"
+    performance: "20.00 %"
   },
   {
     option: "T4",
     mgmt: "7.50 %",
     hurdle: "75.00 %",
-    performace: "20.00 %"
+    performance: "20.00 %"
   },
   {
     option: "T5",
     mgmt: "9.00 %",
     hurdle: "95.00 %",
-    performace: "20.00 %"
+    performance: "20.00 %"
   }
 ];
 
@@ -52,19 +52,19 @@ const plan3 = [
     option: "S3",
     mgmt: "2.82 %",
     hurdle: "25.69 %",
-    performace: "20.00 %"
+    performance: "20.00 %"
   },
   {
     option: "S4",
     mgmt: "3.85 %",
     hurdle: "38.54 %",
-    performace: "20.00 %"
+    performance: "20.00 %"
   },
   {
     option: "S5",
     mgmt: "4.62 %",
     hurdle: "48.82 %",
-    performace: "20.00 %"
+    performance: "20.00 %"
   }
 ];
 
@@ -88,14 +88,24 @@ class Pricing extends Component {
     } else {
       tab3style = { backgroundColor: "#1553A5", color: "#fff" };
     }
+
+    const exampleText = "Example".padEnd(20, " ");
+    const investmentText = "Investment Amount";
+    const advisoryText = "Advisory Fee".padEnd(20, " ");
+
     return (
       <div>
         <Header />
-<Helmet>
-<title> Pricing | Jama Wealth Stock Portfolio Management Services </title>
-<meta name="description" content="We price our wealth management services specially of stock market very cleanly, we dont have any hidden charges, there is no lock in period either.">
-</meta>
-</Helmet>
+        <Helmet>
+          <title>
+            {" "}
+            Pricing | Jama Wealth Stock Portfolio Management Services{" "}
+          </title>
+          <meta
+            name="description"
+            content="We price our wealth management services specially of stock market very cleanly, we dont have any hidden charges, there is no lock in period either."
+          ></meta>
+        </Helmet>
         <div
           style={{
             textAlign: "center",
@@ -210,7 +220,7 @@ class Pricing extends Component {
           </div>
           <div className="gridItem border-right-zero">
             <h6>
-              <b>Performace Fee %</b>
+              <b>Performance Fee %</b>
             </h6>
           </div>
 
@@ -222,7 +232,7 @@ class Pricing extends Component {
               <div className="gridItem">{plan.mgmt}</div>
               <div className="gridItem">{plan.hurdle}</div>
               <div className="gridItem border-right-zero">
-                {plan.performace}
+                {plan.performance}
               </div>
             </>
           ))}
@@ -231,6 +241,96 @@ class Pricing extends Component {
           <div className="gridItem border-bottom-zero"></div>
           <div className="gridItem border-bottom-zero"></div>
           <div className="gridItem border-bottom-zero border-right-zero"></div> */}
+        </div>
+        <div
+          style={{
+            textAlign: "center",
+            alignItems: "center",
+            padding: "0px 0 50px 0"
+          }}
+        >
+          <p id="pricing-description">
+            Hurdel: The minimum gain to acheive. Any Gains above this will be
+            shared using the % perrformance fee shown above. This way our fee is
+            linked your portfolio performance.
+          </p>
+        </div>
+        <div
+          style={{
+            textAlign: "left",
+            alignItems: "center"
+          }}
+        >
+          <div id="pricingTable">
+            <table id="pricingTableExample" border="0">
+              <tr style={{ borderBottom: 0 }}>
+                <td style={{ padding: 0 }}>
+                  <p style={{ margin: 0, fontWeight: "bold" }}>Example</p>
+                </td>
+                <td style={{ padding: 0 }}>: Plan A3</td>
+              </tr>
+              <tr style={{ borderBottom: 0 }}>
+                <td style={{ padding: 0 }}>
+                  <p style={{ margin: 0, fontWeight: "bold" }}>
+                    Investment Advisory
+                  </p>
+                </td>
+                <td style={{ padding: 0 }}>: ₹ 50,00,000</td>
+              </tr>
+              <tr style={{ borderBottom: 0 }}>
+                <td style={{ padding: 0 }}>
+                  <p style={{ margin: 0, fontWeight: "bold" }}>Advisory Fee</p>
+                </td>
+                <td style={{ padding: 0 }}>
+                  : ₹ 1,00,000{" "}
+                  <span style={{ color: "#747477", fontSize: "12px" }}>
+                    i.e, 2% of investment amount
+                  </span>
+                </td>
+              </tr>
+              <tr style={{ borderBottom: 0 }}>
+                <td style={{ padding: 0 }}>
+                  <p style={{ margin: 0, fontWeight: "bold" }}>Hurdle %</p>
+                </td>
+                <td style={{ padding: 0 }}>: 15%</td>
+              </tr>
+              <tr style={{ borderBottom: 0 }}>
+                <td style={{ padding: 0 }}>
+                  <p style={{ margin: 0, fontWeight: "bold" }}>Hurdle Amount</p>
+                </td>
+                <td style={{ padding: 0 }}>: ₹ 7,50,000</td>
+              </tr>
+              <tr style={{ borderBottom: 0 }}>
+                <td style={{ padding: 0 }}>
+                  <p style={{ margin: 0, fontWeight: "bold" }}>
+                    Actual gain at the end of the 1 year
+                  </p>
+                </td>
+                <td style={{ padding: 0 }}>
+                  : ₹ 9,00,000{" "}
+                  <span style={{ color: "#747477", fontSize: "12px" }}>
+                    assuming 18% annual gain.
+                  </span>
+                </td>
+              </tr>
+              <tr style={{ borderBottom: 0 }}>
+                <td style={{ padding: 0 }}>
+                  <p style={{ margin: 0, fontWeight: "bold" }}>
+                    Extra gain above hurdel
+                  </p>
+                </td>
+                <td style={{ padding: 0 }}>: ₹ 1,50,000</td>
+              </tr>
+              <tr style={{ borderBottom: 0 }}>
+                <td style={{ padding: 0 }}>
+                  <p style={{ margin: 0, fontWeight: "bold" }}>
+                    Performance Fee @20%
+                  </p>
+                </td>
+                <td style={{ padding: 0 }}>: ₹ 30,000</td>
+              </tr>
+            </table>
+          </div>
         </div>
 
         <div class=" research-invest-section ">

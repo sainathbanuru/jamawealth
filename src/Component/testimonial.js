@@ -5,6 +5,8 @@ import profile from "../assets/profile.PNG";
 import Footer from "./Footer";
 import Header from "./Header";
 import WOW from "wowjs";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link } from "react-router-dom";
 
 class testimonial extends Component {
   componentDidMount() {
@@ -17,182 +19,172 @@ class testimonial extends Component {
       <div>
         <Header />
 
-        <div class="jama-testimonials-section testimonal-bg">
+        <div class="jama-testimonials-section">
           <div class="container w-percent-90">
             <div class="jars-section-title-heading">
-              <h4 class="testimonials-heading-title">Testimonials</h4>
+              <h4
+                style={{
+                  marginTop: "32px",
+                  marginBottom: "32px",
+                  color: "#ffffff"
+                }}
+              >
+                Testimonials
+              </h4>
             </div>
             <div class="row m-0">
-              <div class="col s12 m6">
-                <div class="testimonials-cards wow fadeIn">
+              <div class="col m6 l4">
+                <div
+                  class="jama-testimonials-cards wow fadeIn"
+                  data-wow-delay="0s"
+                >
                   <div class="Testimonial-profile">
                     <div class="row valign-wrapper testimonial-section-profile-details">
                       <div class="testimonial-pic-section">
-                        <img class="profile-pic" src={profile} />
+                        <LazyLoadImage
+                          class="profile-pic"
+                          src={
+                            "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/new/static/img/Image+5.png"
+                          }
+                          alt="jama_wealth_review"
+                        />
                       </div>
 
                       <div class="testimonial-text">
-                        <h6>Pam Beesly</h6>
-                        <p class="m-0">since 2011</p>
+                        <h6>Nageswara Rao Vasireddy</h6>
+                        <p class="m-0">Sales Leader, Pharma Industry</p>
                       </div>
                     </div>
                     <div class="testimonial-description">
-                      <h6>The best of the best..</h6>
+                      {/* <h6>The best of the best..</h6> */}
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 m6">
-                <div class="testimonials-cards wow fadeIn">
-                  <div class="Testimonial-profile">
-                    <div class="row valign-wrapper testimonial-section-profile-details">
-                      <div class="testimonial-pic-section">
-                        <img class="profile-pic" src={profile} />
-                      </div>
-
-                      <div class="testimonial-text">
-                        <h6>Pam Beesly</h6>
-                        <p class="m-0">since 2011</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-description">
-                      <h6>The best of the best..</h6>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 m6">
-                <div class="testimonials-cards wow fadeIn">
-                  <div class="Testimonial-profile">
-                    <div class="row valign-wrapper testimonial-section-profile-details">
-                      <div class="testimonial-pic-section">
-                        <img class="profile-pic" src={profile} />
-                      </div>
-
-                      <div class="testimonial-text">
-                        <h6>Pam Beesly</h6>
-                        <p class="m-0">since 2011</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-description">
-                      <h6>The best of the best..</h6>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 m6">
-                <div class="testimonials-cards wow fadeIn">
-                  <div class="Testimonial-profile">
-                    <div class="row valign-wrapper testimonial-section-profile-details">
-                      <div class="testimonial-pic-section">
-                        <img class="profile-pic" src={profile} />
-                      </div>
-
-                      <div class="testimonial-text">
-                        <h6>Pam Beesly</h6>
-                        <p class="m-0">since 2011</p>
-                      </div>
-                    </div>
-                    <div class="testimonial-description">
-                      <h6>The best of the best..</h6>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        Jama financial advisors have made Financial Planning
+                        truly comprehensive and unbiased.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col s12 m6">
-                <div class="testimonials-cards wow fadeIn">
+              <div class="col m6 l4">
+                <div
+                  class="jama-testimonials-cards wow fadeIn"
+                  data-wow-delay="0.2s"
+                >
                   <div class="Testimonial-profile">
                     <div class="row valign-wrapper testimonial-section-profile-details">
                       <div class="testimonial-pic-section">
-                        <img class="profile-pic" src={profile} />
+                        <LazyLoadImage
+                          class="profile-pic"
+                          src={
+                            "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/new/static/img/Image+6.png"
+                          }
+                        />
                       </div>
 
                       <div class="testimonial-text">
-                        <h6>Pam Beesly</h6>
-                        <p class="m-0">since 2011</p>
+                        <h6>Abhijit Sen</h6>
+                        <p class="m-0">Businessman</p>
                       </div>
                     </div>
                     <div class="testimonial-description">
-                      <h6>The best of the best..</h6>
+                      {/* <h6>The best of the best..</h6> */}
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        Thanks to Jama Wealth Advisory, I could start my
+                        business with confidence. Money works hard for me now.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col s12 m6">
-                <div class="testimonials-cards wow fadeIn">
+
+              <div class="col m6 l4">
+                <div
+                  class="jama-testimonials-cards wow fadeIn"
+                  data-wow-delay="0.4s"
+                >
                   <div class="Testimonial-profile">
                     <div class="row valign-wrapper testimonial-section-profile-details">
                       <div class="testimonial-pic-section">
-                        <img class="profile-pic" src={profile} />
+                        <LazyLoadImage
+                          class="profile-pic"
+                          src={
+                            "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/new/static/img/Image+7.png"
+                          }
+                        />
                       </div>
 
                       <div class="testimonial-text">
-                        <h6>Pam Beesly</h6>
-                        <p class="m-0">since 2011</p>
+                        <h6>Gautam Khanna</h6>
+                        <p class="m-0">Vice President, IT MNC</p>
                       </div>
                     </div>
                     <div class="testimonial-description">
-                      <h6>The best of the best..</h6>
+                      {/* <h6>The best of the best..</h6> */}
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        Jama Wealth’s zero commission, zero brokerage advisory
+                        model builds trust. It is refreshing.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="load-more-btn ">
-              <button
-                class="btn waves-effect waves-light center testimonial-load-more-btn"
-                type="submit"
-                name="action"
+            <div class="col m5 l4" style={{ padding: "0.75rem" }}>
+              <div
+                class="jama-testimonials-vcards wow fadeIn"
+                data-wow-delay="0.4s"
               >
-                Load More
-              </button>
+                <iframe
+                  src="https://player.vimeo.com/video/378717516"
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                  style={{ position: "absolute", height: "90%", width: "100%" }}
+                ></iframe>
+              </div>
             </div>
+
+            {/* <div class="See-more-btn">
+              <Link to="/testimonial">
+                {" "}
+                <button
+                  class="btn waves-effect waves-light center testimonial-see-more-btn"
+                  type="submit"
+                  name="action"
+                >
+                  See More
+                </button>{" "}
+              </Link>
+            </div> */}
           </div>
         </div>
 
+        <div class="research-invest-section">
+          <div class="row">
+            <div class="col s12 m6 offset-m3">
+              <div class="research-invest-section-content">
+                <h4 style={{ lineHeight: 1.5 }}>
+                  Too Busy To Track Investments? Not Able To Take Timely
+                  Portfolio Action?
+                </h4>
+                <p>
+                  As a busy professional or a businessman, we know that your
+                  primary focus is where it should be. Delegate the day to day
+                  tracking of your investment portfolio to a trusted advisor who
+                  helps grow your wealth with clean operating principles.
+                </p>
+                <div class="research-invest-btn-section">
+                  <Link to="/contactus">
+                    <a class="waves-effect waves-light btn btn-large btn-orange m-r-15">
+                      Contact Advisor
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <Footer />
       </div>
     );

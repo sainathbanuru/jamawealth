@@ -58,6 +58,14 @@ h6 {
   font-family: Roboto;
 }
 
+#pricingTable {
+  width: 70%;
+  margin: 0 auto;
+}
+#pricingTableExample {
+  width: 500px;
+}
+
 @media only screen and (max-width: 768px) {
   .gridContainer {
     width: 100%;
@@ -65,5 +73,15 @@ h6 {
 
   #pricing-description {
     width: 100%;
+  }
+
+  #pricingTableExample {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #pricingTable {
+    width: 90%;
+    margin: 0 auto;
   }
 }

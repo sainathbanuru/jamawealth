@@ -109,12 +109,22 @@ nav ul a:hover {
   color: #26a69a;
 }
 
-.start-btn {
+.login-btn {
   padding: 8px 15px !important;
   border: 1px solid #ffc20e;
   border-radius: 2px;
   margin: 0 4px;
 }
+
+.start-btn {
+  padding: 8px 15px !important;
+  border: 1px solid #ffc20e;
+  background: #ffc20e !important;
+  border-radius: 2px;
+  color: #000 !important;
+  margin: 0 4px;
+}
+
 .start-btn:hover {
   color: #000 !important;
   background: #ffc20e !important;
@@ -456,9 +466,7 @@ span i {
 }
 
 .jama-testimonials-vcards {
-  
-  min-height: 600px;
-  min-width: 80px;
+  height: 600px;
   border-radius: 4px;
   padding: 16px;
   position: relative;
@@ -839,6 +847,12 @@ nav .sidenav-trigger {
 
   .contactus {
     width: 90%;
+  }
+
+  .jama-testimonials-vcards {
+    height: 200px;
+    width: 100%;
+    padding: 0;
   }
 }
 

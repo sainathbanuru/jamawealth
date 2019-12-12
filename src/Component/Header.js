@@ -40,6 +40,11 @@ class Header extends Component {
               </li>
               {/* <li><Link to="/testimonial" class="active">Testimonials</Link></li> */}
               <li>
+                <Link to="/app" class="login-btn">
+                  Login
+                </Link>
+              </li>
+              <li>
                 <Link to="/contactus" class="start-btn">
                   Get Started
                 </Link>
