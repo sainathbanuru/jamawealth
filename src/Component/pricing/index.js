@@ -5,6 +5,8 @@ import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Cal from "../../assets/cal.png";
+import Cal2 from "../../assets/cal2.png";
+import Cal3 from "../../assets/cal3.png";
 
 const plan1 = [
   {
@@ -72,7 +74,9 @@ const plan3 = [
 class Pricing extends Component {
   state = {
     tab: 1,
-    planDetails: plan1
+    planDetails: plan1,
+    image: Cal,
+    exampleHeading: "Illustration for Plan A3"
   };
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -138,7 +142,9 @@ class Pricing extends Component {
             onClick={() => {
               this.setState({
                 tab: 1,
-                planDetails: plan1
+                planDetails: plan1,
+                image: Cal,
+                exampleHeading: "Illustration for Plan A3"
               });
             }}
             style={tab1style}
@@ -161,7 +167,9 @@ class Pricing extends Component {
             onClick={() => {
               this.setState({
                 tab: 2,
-                planDetails: plan2
+                planDetails: plan2,
+                image: Cal2,
+                exampleHeading: "Illustration for Plan T3"
               });
             }}
             style={tab2style}
@@ -185,7 +193,9 @@ class Pricing extends Component {
             onClick={() => {
               this.setState({
                 tab: 3,
-                planDetails: plan3
+                planDetails: plan3,
+                image: Cal3,
+                exampleHeading: "Illustration for Plan S3"
               });
             }}
             style={tab3style}
@@ -271,7 +281,7 @@ class Pricing extends Component {
               backgroundColor: "#f4f5fb"
             }}
           >
-            <h4>Example: Plan A3</h4>
+            <h4>{this.state.exampleHeading}</h4>
           </div>
         </div>
 
@@ -282,7 +292,7 @@ class Pricing extends Component {
             margin: "16px auto",
             display: "flex"
           }}
-          src={Cal}
+          src={this.state.image}
         />
 
         <div class=" research-invest-section ">
