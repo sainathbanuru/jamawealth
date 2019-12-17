@@ -140,7 +140,7 @@ class testimonial extends Component {
                   frameborder="0"
                   allow="autoplay; fullscreen"
                   allowfullscreen
-                  style={{ position: "absolute", height: "70%", width: "90%" }}
+                  style={{ position: "absolute", height: "70%", width: "100%" }}
                 ></iframe>
               </div>
             </div>
