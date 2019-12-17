@@ -42,13 +42,10 @@ class HomepageBodyContent extends Component {
             <div class="row valign-wrapper">
               <div class="col s12 m12  no-padding">
                 <div class="Jar-graph-img wow fadeIn">
-                <picture>
-                <source srcset={Jarwebp} type="image/webp" />
-                <LazyLoadImage src={Jargraph} alt="jamawealth_graph" />
-                
-                
-                </picture>
-                  
+                  <picture>
+                    <source srcset={Jarwebp} type="image/webp" />
+                    <LazyLoadImage src={Jargraph} alt="jamawealth_graph" />
+                  </picture>
                 </div>
               </div>
               <div class="col s12 m12  no-padding">
@@ -98,9 +95,9 @@ class HomepageBodyContent extends Component {
               </div>
               <div class="col m12 l6">
                 <div class="Jar-graph-img wow fadeIn">
-                <picture>
-                <source srcset={NiftImage} type="image/webp" />
-                  <LazyLoadImage src={niftimg} alt="nifty_vs_jama_wealth" />
+                  <picture>
+                    <source srcset={NiftImage} type="image/webp" />
+                    <LazyLoadImage src={niftimg} alt="nifty_vs_jama_wealth" />
                   </picture>
                 </div>
               </div>
@@ -467,18 +464,21 @@ class HomepageBodyContent extends Component {
                   </div>
                 </div>
               </div>
-              
             </div>
-            <div class="col m5 l4" style={{padding: '0.75rem'}}>
-                <div
-                  class="jama-testimonials-vcards wow fadeIn"
-                  data-wow-delay="0.4s"
-                >
-                    <iframe src="https://player.vimeo.com/video/378717516" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style={{position: 'absolute', height: '90%', width: '100%'}}></iframe> 
-                      
-                      
-                </div>
+            <div class="col m5 l4" style={{ padding: "0.75rem" }}>
+              <div
+                class="jama-testimonials-vcards wow fadeIn"
+                data-wow-delay="0.4s"
+              >
+                <iframe
+                  src="https://player.vimeo.com/video/378717516"
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                  style={{ position: "absolute", height: "70%", width: "90%" }}
+                ></iframe>
               </div>
+            </div>
 
             {/* <div class="See-more-btn">
               <Link to="/testimonial">
