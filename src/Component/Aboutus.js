@@ -13,7 +13,7 @@ import Rectangle1a from "../assets/Rectangle1a.png";
 import Footer from "./Footer";
 import Header from "./Header";
 import WOW from "wowjs";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 class Aboutus extends Component {
   componentDidMount() {
@@ -24,11 +24,13 @@ class Aboutus extends Component {
   render() {
     return (
       <div>
-      <Helmet>
-      <title> Aboutus | Jama Wealth Management & Financial Planning </title>
-      <meta name="description" content="Jama Wealth Management offer a clinical equity portfolio which coupled with both machine learning and human intelligence. Get best returns in stock market with Jama Wealth equity portfolio">
-     </meta>
-      </Helmet>
+        <Helmet>
+          <title> Aboutus | Jama Wealth Management & Financial Planning </title>
+          <meta
+            name="description"
+            content="Jama Wealth Management offer a clinical equity portfolio which coupled with both machine learning and human intelligence. Get best returns in stock market with Jama Wealth equity portfolio"
+          ></meta>
+        </Helmet>
         <Header />
 
         <div class="jars-section top-content-section value-top-section valign-wrapper">
@@ -67,13 +69,21 @@ class Aboutus extends Component {
                 <div class=" col s12 m6 ">
                   <div class=" team-top-section wow fadeIn">
                     <div class=" team-top-img center-align ">
-                      <img src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/team1.JPG" alt="Ram_Medury" />
+                      <img
+                        src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/team1.JPG"
+                        alt="Ram_Medury"
+                      />
                     </div>
                     <div class=" team-top-content center-align ">
                       <h6>Ram kalyan Medury</h6>
                       <p>Founder & CEO</p>
                       <li>
-                        <img src={linkedin} />
+                        <a
+                          href="https://www.linkedin.com/in/rammedury/"
+                          target="_blank"
+                        >
+                          <img src={linkedin} />
+                        </a>
                       </li>
                     </div>
                   </div>
@@ -81,14 +91,22 @@ class Aboutus extends Component {
                 <div class=" col s12 m6 ">
                   <div class=" team-top-section wow fadeIn">
                     <div class=" team-top-img center-align ">
-                      <img src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/team2.JPG" alt="Manoj_Trivedi" />
+                      <img
+                        src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/team2.JPG"
+                        alt="Manoj_Trivedi"
+                      />
                     </div>
                     <div class="team-top-content center-align ">
                       <h6>Manoj Trivedi</h6>
                       <p>Research & Advisory Head</p>
                       {/* <li><img src={twitter} /></li> */}
                       <li>
-                        <img src={linkedin} />
+                        <a
+                          href="https://www.linkedin.com/in/manoj-trivedi-a517b014/"
+                          target="_blank"
+                        >
+                          <img src={linkedin} />
+                        </a>
                       </li>
                     </div>
                   </div>
