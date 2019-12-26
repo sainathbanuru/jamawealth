@@ -557,44 +557,6 @@ class HomepageBodyContent extends Component {
             </div> */}
           </div>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
-          <div
-            class="jama-testimonials-vcards wow fadeIn"
-            data-wow-delay="0.4s"
-          >
-            <iframe
-              src="https://player.vimeo.com/video/378717516"
-              frameborder="0"
-              allow="autoplay; fullscreen"
-              allowfullscreen
-              style={{ position: "absolute", height: "70%", width: "100%" }}
-            ></iframe>
-          </div>
-          <div
-            class="jama-testimonials-vcards wow fadeIn"
-            data-wow-delay="0.4s"
-          >
-            <iframe
-              src="https://player.vimeo.com/video/378717516"
-              frameborder="0"
-              allow="autoplay; fullscreen"
-              allowfullscreen
-              style={{ position: "absolute", height: "70%", width: "100%" }}
-            ></iframe>
-          </div>
-          <div
-            class="jama-testimonials-vcards wow fadeIn"
-            data-wow-delay="0.4s"
-          >
-            <iframe
-              src="https://player.vimeo.com/video/378717516"
-              frameborder="0"
-              allow="autoplay; fullscreen"
-              allowfullscreen
-              style={{ position: "absolute", height: "70%", width: "100%" }}
-            ></iframe>
-          </div>
-        </div>
 
         <div class="research-invest-section">
           <div class="row">
