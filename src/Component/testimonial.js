@@ -130,18 +130,66 @@ class testimonial extends Component {
                 </div>
               </div>
             </div>
-            <div class="col m5 l4" style={{ padding: "0.75rem" }}>
-              <div
-                class="jama-testimonials-vcards wow fadeIn"
-                data-wow-delay="0.4s"
-              >
-                <iframe
-                  src="https://player.vimeo.com/video/378717516"
-                  frameborder="0"
-                  allow="autoplay; fullscreen"
-                  allowfullscreen
-                  style={{ position: "absolute", height: "70%", width: "100%" }}
-                ></iframe>
+
+            <div class="row m-0">
+              <div class="col m6 l4">
+                <div
+                  class="jama-testimonials-cards wow fadeIn"
+                  data-wow-delay="0s"
+                  style={{ padding: 0, backgroundColor: "transparent" }}
+                >
+                  <iframe
+                    src="https://player.vimeo.com/video/378717516"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen
+                    style={{
+                      position: "absolute",
+                      height: "100%",
+                      width: "100%"
+                    }}
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="col m6 l4">
+                <div
+                  class="jama-testimonials-cards wow fadeIn"
+                  data-wow-delay="0.2s"
+                  style={{ padding: 0, backgroundColor: "transparent" }}
+                >
+                  <iframe
+                    src="https://player.vimeo.com/video/380443962"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen
+                    style={{
+                      position: "absolute",
+                      height: "100%",
+                      width: "100%"
+                    }}
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="col m6 l4">
+                <div
+                  class="jama-testimonials-cards wow fadeIn"
+                  data-wow-delay="0.4s"
+                  style={{ padding: 0, backgroundColor: "transparent" }}
+                >
+                  <iframe
+                    src="https://player.vimeo.com/video/381501489"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen
+                    style={{
+                      position: "absolute",
+                      height: "100%",
+                      width: "100%"
+                    }}
+                  ></iframe>
+                </div>
               </div>
             </div>
 

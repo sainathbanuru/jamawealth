@@ -494,7 +494,7 @@ class HomepageBodyContent extends Component {
                   style={{ padding: 0, backgroundColor: "transparent" }}
                 >
                   <iframe
-                    src="https://player.vimeo.com/video/378717516"
+                    src="https://player.vimeo.com/video/380443962"
                     frameborder="0"
                     allow="autoplay; fullscreen"
                     allowfullscreen
@@ -514,7 +514,7 @@ class HomepageBodyContent extends Component {
                   style={{ padding: 0, backgroundColor: "transparent" }}
                 >
                   <iframe
-                    src="https://player.vimeo.com/video/378717516"
+                    src="https://player.vimeo.com/video/381501489"
                     frameborder="0"
                     allow="autoplay; fullscreen"
                     allowfullscreen
@@ -527,7 +527,7 @@ class HomepageBodyContent extends Component {
                 </div>
               </div>
             </div>
-            <div class="col m5 l4" style={{ padding: "0.75rem" }}>
+            {/* <div class="col m5 l4" style={{ padding: "0.75rem" }}>
               <div
                 class="jama-testimonials-vcards wow fadeIn"
                 data-wow-delay="0.4s"
@@ -541,7 +541,7 @@ class HomepageBodyContent extends Component {
                   style={{ position: "absolute", height: "70%", width: "100%" }}
                 ></iframe>
               </div>
-            </div>
+            </div> */}
 
             {/* <div class="See-more-btn">
               <Link to="/testimonial">
