@@ -261,7 +261,7 @@ class Pricing extends Component {
           }}
         >
           <p id="pricing-description">
-            Hurdel: The minimum gain to acheive. Any Gains above this will be
+            Hurdle: The minimum gain to acheive. Any Gains above this will be
             shared using the % perrformance fee shown above. This way our fee is
             linked your portfolio performance.
           </p>
