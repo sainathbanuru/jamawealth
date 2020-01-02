@@ -31,8 +31,65 @@ class testimonial extends Component {
             >
               <h4 class="testimonials-title-style">Testimonials</h4>
             </div>
+            <div class="col m5 l4">
+              <div
+                class="jama-testimonials-vcards wow fadeIn"
+                data-wow-delay="0.4s"
+                style={{ padding: 0 }}
+              >
+                <iframe
+                  src="https://player.vimeo.com/video/380209697"
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                  style={{
+                    position: "absolute",
+                    height: "85%",
+                    width: "100%"
+                  }}
+                ></iframe>
+              </div>
+            </div>
+            <div class="col m5 l4">
+              <div
+                class="jama-testimonials-vcards wow fadeIn"
+                data-wow-delay="0.4s"
+                style={{ padding: 0 }}
+              >
+                <iframe
+                  src="https://player.vimeo.com/video/380443962"
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                  style={{
+                    position: "absolute",
+                    height: "85%",
+                    width: "100%"
+                  }}
+                ></iframe>
+              </div>
+            </div>
+            <div class="col m5 l4">
+              <div
+                class="jama-testimonials-vcards wow fadeIn"
+                data-wow-delay="0.4s"
+                style={{ padding: 0 }}
+              >
+                <iframe
+                  src="https://player.vimeo.com/video/381501489"
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                  style={{
+                    position: "absolute",
+                    height: "85%",
+                    width: "100%"
+                  }}
+                ></iframe>
+              </div>
+            </div>
             <div class="row m-0">
-              <div class="row m-0">
+              {/* <div class="row m-0">
                 <div class="col m6 l4">
                   <div
                     class="jama-testimonials-cards wow fadeIn"
@@ -92,7 +149,7 @@ class testimonial extends Component {
                     ></iframe>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* <div class="col m6 l4">
                 <div
                   class="jama-testimonials-cards wow fadeIn"
