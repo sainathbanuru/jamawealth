@@ -44,7 +44,7 @@ class testimonial extends Component {
                   allowfullscreen
                   style={{
                     position: "absolute",
-                    height: "85%",
+                    height: "70%",
                     width: "100%"
                   }}
                 ></iframe>
@@ -63,7 +63,7 @@ class testimonial extends Component {
                   allowfullscreen
                   style={{
                     position: "absolute",
-                    height: "85%",
+                    height: "70%",
                     width: "100%"
                   }}
                 ></iframe>
@@ -82,7 +82,7 @@ class testimonial extends Component {
                   allowfullscreen
                   style={{
                     position: "absolute",
-                    height: "85%",
+                    height: "70%",
                     width: "100%"
                   }}
                 ></iframe>
