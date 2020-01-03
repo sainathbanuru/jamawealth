@@ -467,10 +467,8 @@ span i {
 
 .jama-testimonials-vcards {
   height: 600px;
-  border-radius: 4px;
-  padding: 16px;
   position: relative;
-  margin-top: 25px;
+  margin-bottom: -50px;
 }
 
 .testimonial-text {
