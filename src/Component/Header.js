@@ -54,7 +54,7 @@ class Header extends Component {
               </li>
               <li>
                 <a
-                  href="https://www.jamawealth.com/app/accounts/signup/"
+                  href="https://www.jamawealth.com/contactus/"
                   class="start-btn"
                 >
                   Get Started
