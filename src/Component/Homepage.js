@@ -15,6 +15,7 @@ import howjamaimgyllo from "../assets/howjamaimgyllo.png";
 import startimgyllo from "../assets/startimgyllo.png";
 import Introsection from "./Introsection";
 import WOW from "wowjs";
+import { Helmet } from "react-helmet";
 
 import FeatureSection from "./featureSection";
 
@@ -31,6 +32,16 @@ class Homepage extends Component {
     return (
       <div>
         <Header />
+        <Helmet>
+          <title>
+            Jama Wealth - Ethical Investment Managers | Preserve Wealth &
+            Prosper More, with Machine Learning Powered Algorithms
+          </title>
+          <meta
+            name="description"
+            content="Jama Wealth Management offer a clinical equity portfolio which coupled with both machine learning and human intelligence. Get best returns in stock market with Jama Wealth equity portfolio"
+          />
+        </Helmet>
         <Introsection />
         <FeatureSection />
 
@@ -110,7 +121,11 @@ class Homepage extends Component {
                       <div class="col m4 s4 no-padding tab-card-margin-style">
                         <div class="Jama-tab-card-btn valign-wrapper jama-right-tabs jama-right-tabs-active bg-white m-r-4 b-left">
                           <span>
-                            <img class="mobile-show-img" src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/philosophyblk.png" alt="Philosophy_jama_wealth"/>
+                            <img
+                              class="mobile-show-img"
+                              src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/philosophyblk.png"
+                              alt="Philosophy_jama_wealth"
+                            />
                           </span>
                           <h6 class="under-line-style">
                             Investment Philosophy
@@ -139,7 +154,8 @@ class Homepage extends Component {
                               <span>
                                 <img
                                   class="mobile-show-img"
-                                  src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/startimgblk.png" alt="jamawealth"
+                                  src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/startimgblk.png"
+                                  alt="jamawealth"
                                 />
                               </span>
                               <h6 class="under-line-style">

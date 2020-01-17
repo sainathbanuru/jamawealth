@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import "../css/style.css";
 import "../css/about.css";
 import { Link } from "react-router-dom";
@@ -23,6 +24,17 @@ class Investphilosphyinfo extends Component {
     return (
       <div>
         <Header />
+        <Helmet>
+          <title>
+            {" "}
+            Investment Philosophy | Jama Wealth Management & Investment Advisory{" "}
+          </title>
+          <meta
+            name="description"
+            content="Equity investment portfolios, selected by experts and machine learning algorithms.
+For busy professionals, CXOs and business-owners."
+          ></meta>
+        </Helmet>
 
         <div class="jars-section">
           <div class="row">
@@ -39,7 +51,11 @@ class Investphilosphyinfo extends Component {
               <div class="about-philosophy-left-content">
                 <h4>Investment Philosophy</h4>
                 <div class="Aboutus-img-right right-align">
-                  <img class=" responsive-img" src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/investment_philosophy%402x.png" alt="Philosophy_jama_wealth"/>
+                  <img
+                    class=" responsive-img"
+                    src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/investment_philosophy%402x.png"
+                    alt="Philosophy_jama_wealth"
+                  />
                 </div>
                 <p>
                   We follow a simple Investment Philosophy for JARS. It is
@@ -131,7 +147,11 @@ class Investphilosphyinfo extends Component {
                   We focus on quality business across sectors. The emphasis on
                   the business first, and not the sector which is ‘in fashion’.
                 </p>
-                <img class=" responsive-img" src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/investmentPhilosophyFocus2.png" alt="jama_wealth_philosophy" />
+                <img
+                  class=" responsive-img"
+                  src="https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/investmentPhilosophyFocus2.png"
+                  alt="jama_wealth_philosophy"
+                />
                 {/* <p class="article-sub-title">Conclusion</p> */}
               </div>
             </div>

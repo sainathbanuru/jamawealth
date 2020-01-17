@@ -7,7 +7,7 @@ import howjamawealthimg from "../assets/how-jama-wealth-img.svg";
 import Footer from "./Footer";
 import Header from "./Header";
 import Downladebook from "./Downladebook";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 class HowJamaWorksInfo extends Component {
   componentDidMount() {
@@ -18,10 +18,13 @@ class HowJamaWorksInfo extends Component {
       <div>
         <Header />
         <Helmet>
-        <title> How Jama Wealth Works | Jama Wealth Management & investment Advisory Platform</title>
-        <meta name="description" content="Jama Wealth Management & Investment Advisory works best in your favour to build your wealth throgh share market equities, best in class service provided to customers. ">
-</meta>
-</Helmet>
+          <title> Jama Wealth | How Jama Welath Works </title>
+          <meta
+            name="description"
+            content="Equity investment portfolios, selected by experts and machine learning algorithms.
+For busy professionals, CXOs and business-owners."
+          ></meta>
+        </Helmet>
 
         <div class="jars-section">
           <div class="row">
