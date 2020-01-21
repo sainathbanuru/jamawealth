@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import Homepage from "../src/Component/Homepage";
 import HowjamaWorks from "../src/Component/HowjamaWorks";
-import * as serviceWorker from "./serviceWorker";
+// import * as serviceWorker from "./serviceWorker";
 import Aboutus from "../src/Component/Aboutus";
 import testimonial from "../src/Component/testimonial";
 import StartWealthCreation from "./Component/StartWealthCreation";
@@ -80,4 +80,4 @@ ReactDOM.render(routing, document.getElementById("root"));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// serviceWorker.unregister();
