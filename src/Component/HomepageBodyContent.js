@@ -254,7 +254,7 @@ class HomepageBodyContent extends Component {
                     src="https://www.youtube.com/embed/lNZEWlkBdE0?rel=0"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
+                    allowfullscreen="allowfullscreen"
                   ></iframe>
 
                   {/* <iframe width=“560” height=“315" src=“https://www.youtube.com/embed/UC6N94FWDmo” frameborder=“0" allow=“accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture” allowfullscreen></iframe> */}
@@ -269,7 +269,7 @@ class HomepageBodyContent extends Component {
                     src="https://www.youtube.com/embed/UC6N94FWDmo?rel=0"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
+                    allowfullscreen="allowfullscreen"
                   ></iframe>
                 </div>
               </div>
