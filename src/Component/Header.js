@@ -53,10 +53,7 @@ class Header extends Component {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.jamawealth.com/contactus/"
-                  class="start-btn"
-                >
+                <a href="/contactus/" class="start-btn">
                   Get Started
                 </a>
               </li>

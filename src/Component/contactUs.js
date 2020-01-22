@@ -2,6 +2,7 @@ import React from "react";
 import "../css/style.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet";
 
 export default class ContactUs extends React.Component {
   state = {
@@ -77,6 +78,16 @@ export default class ContactUs extends React.Component {
     return (
       <div>
         <Header />
+        <Helmet>
+          <title>
+            Jama Wealth - Ethical Investment Managers | Preserve Wealth &
+            Prosper More, with Machine Learning Powered Algorithms
+          </title>
+          <meta
+            name="description"
+            content="Jama Wealth Management offer a clinical equity portfolio which coupled with both machine learning and human intelligence. Get best returns in stock market with Jama Wealth equity portfolio"
+          />
+        </Helmet>
         <div
           class="jars-section-title-heading"
           style={{ marginTop: 100, marginBottom: 0 }}
