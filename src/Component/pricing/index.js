@@ -226,7 +226,7 @@ class Pricing extends Component {
           </div>
           <div className="gridItem">
             <h6>
-              <b>Hurdle %</b>
+              <b>Absolute Hurdle %</b>
             </h6>
           </div>
           <div className="gridItem border-right-zero">
