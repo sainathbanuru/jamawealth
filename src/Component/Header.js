@@ -60,6 +60,43 @@ class Header extends Component {
             </ul>
           </div>
         </nav>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `<script>
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    var source = getParameterByName('utm_source');
+    var medium = getParameterByName('utm_medium');
+    var campaign = getParameterByName('utm_campaign');
+    var parent_source = document.referrer;
+    var host = "";
+
+    if(parent_source.length > 0){
+        var parts = document.referrer.split('://')[1].split('/');
+        var protocol = document.referrer.split('://')[0];
+        var host = parts[0];
+        host = host.replace("www."," ").replace(".com"," ");
+        var pathName = parts.slice(1).join('/')
+    }
+    if(source.length > 0){
+        sessionStorage.setItem("utm_source", source);
+    }
+    else if(host.length){
+        sessionStorage.setItem("utm_source", host);
+    }
+    if(medium.length > 0){
+        sessionStorage.setItem("utm_channel", medium);
+    }
+    if(campaign.length > 0){
+        sessionStorage.setItem("utm_campaign", campaign);
+    }
+</script>`
+          }}
+        />
       </div>
     );
   }
