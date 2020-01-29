@@ -5,6 +5,23 @@ import "../css/style.css";
 import Sidebar from "./Sidebar";
 
 class Header extends Component {
+  componentDidMount() {
+    const search = window.location.search;
+    const params = new URLSearchParams(search);
+    const source = params.get("utm_source");
+    const medium = params.get("utm_medium");
+    const campaign = params.get("utm_campaign");
+    if (source && source.length > 0) {
+      sessionStorage.setItem("utm_source", source);
+    }
+    if (medium && medium.length > 0) {
+      sessionStorage.setItem("utm_channel", medium);
+    }
+    if (medium && campaign.length > 0) {
+      sessionStorage.setItem("utm_campaign", campaign);
+    }
+  }
+
   render() {
     return (
       <div>
