@@ -33,6 +33,7 @@ import Pricing from "./Component/pricing/index";
 import SheerMagicArticle from "./Component/sheerMagicArticle";
 import ContactUs from "./Component/contactUs";
 import Privacy from "./Component/privacy";
+import Contact from "./Component/contact";
 
 const routing = (
   <Router>
@@ -69,6 +70,7 @@ const routing = (
       <Route path="/pricing" component={Pricing} />
       <Route path="/sheerMagicArticle" component={SheerMagicArticle} />
       <Route path="/contactUs" component={ContactUs} />
+      <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
     </Switch>
     {/* </BrowserRouter> */}
