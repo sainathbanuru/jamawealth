@@ -1,5 +1,5 @@
 .intro-section-bg {
-  background-image: url("../assets/test.png");
+  background-image: url("../assets/main9.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* border-bottom: 4px solid #ffc20e; */
@@ -9,7 +9,7 @@
 .intro-section-content {
   width: 90%;
   margin: auto;
-  padding: 150px 0px 160px 0px;
+  padding: 160px 0px 80px 0px;
   min-height: 75vh;
 }
 .banner-para-list {
@@ -81,10 +81,45 @@
   background: transparent !important;
 }
 
+.table-heading {
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+.table-cell {
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+.table-heading-main {
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+.complaints-table {
+  border: 0.1px solid white;
+  margin-top: 50px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.complaints-table th,
+td {
+  border: 0.1px solid white;
+  padding: 10px 0px;
+}
+
+.sebi {
+  font-size: 10;
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
   .Sebi-style-intro {
     font-size: 12px;
-    background-color: #999;
+    background: rgba(0, 0, 0, 0.4);
     opacity: 0.9;
   }
   .intro-section-content-text h4 {
@@ -106,15 +141,24 @@
     text-align: center;
   }
   .intro-section-bg {
-    background-image: url("https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/mobileBanner.png");
+    background-image: url("../assets/mobile3.png");
+    /* background-image: url("https://jamaappprod.s3-ap-southeast-1.amazonaws.com/Website/Jamawealth/mobileBanner.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 95vh;
-    min-height: 600px;
+    min-height: 900px;
     /* border-bottom: 4px solid #ffc20e; */
   }
   .get-started {
     width: 100%;
     font-size: 20px;
+  }
+  .complaints-table th,
+  td {
+    font-size: 8px;
+  }
+  .sebi {
+    color: black;
+    font-size: 8px;
   }
 }

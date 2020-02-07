@@ -40,6 +40,35 @@ class Introsection extends Component {
                       </a>
                     </Link>
                   </div>
+                  <table class="complaints-table">
+                    <tr>
+                      <th colspan="5" class="table-heading-main">
+                        Number of complaints*
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="table-heading">
+                        At the beginning of the month{" "}
+                      </th>
+                      <th class="table-heading">Received during the month </th>
+                      <th class="table-heading">Resolved during the month </th>
+                      <th class="table-heading">
+                        Pending at the end of the month{" "}
+                      </th>
+                      <th class="table-heading">Reasons for pendency</th>
+                    </tr>
+                    <tr>
+                      <td class="table-cell">0</td>
+                      <td class="table-cell">0</td>
+                      <td class="table-cell">0</td>
+                      <td class="table-cell">0</td>
+                      <td class="table-cell">-</td>
+                    </tr>
+                  </table>
+                  <p class="sebi">
+                    *Displaying SEBI registered complaints as per latest SEBI
+                    guideline
+                  </p>
                   <p class="Sebi-style-intro">
                     SEBI Registered Investment Advisor: INA 200006725
                   </p>

@@ -1,0 +1,484 @@
+.yellow-bg {
+  background-color: #ffdb00;
+}
+
+.yellow {
+  color: #ffdb00;
+}
+
+.background-image {
+  /* The image used */
+  background-image: url(../assets/bg_hands.png);
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  /* Full height */
+  /* height: "100vh";
+  min-height: 100; */
+
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.bg-image {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+/* .why-container {
+  font-family: ubuntu;
+  margin-top: 35px;
+} */
+
+.why-row {
+  margin-top: 25px;
+  margin-bottom: 65px;
+  /* background-color: red; */
+}
+
+.why-column {
+  flex-direction: column;
+  flex: 100%;
+}
+
+.why-cell {
+  display: flex;
+  align-items: center;
+}
+
+.why-image {
+  width: 100px;
+  height: 100px;
+  /* float: right; */
+}
+
+.why-image-container {
+  text-align: right;
+}
+
+.why-cell-content {
+  color: #2b618d;
+}
+
+.why-cell-heading {
+  color: rgb(21, 83, 165);
+}
+
+.why-cell-container {
+  padding: 10;
+}
+
+.why-container {
+  padding-top: 32px;
+  padding-bottom: 150px;
+  font-family: ubuntu;
+  background-color: white;
+}
+.why-heading {
+  text-align: center;
+  color: rgb(171, 171, 171);
+  padding-bottom: 20px;
+}
+
+.new-row {
+  background-color: #1553a5;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: 100%;
+  font-family: ubuntu;
+  padding-bottom: 100px;
+  font-family: ubuntu;
+}
+
+.customer {
+  background-color: #3b6090;
+  border-radius: 10px;
+  height: 250px;
+  /* padding-top: 15px; */
+  padding-bottom: 20px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.customer-content {
+  color: white;
+  text-align: center;
+  /* padding-top: 20px; */
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.customer-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+}
+
+/* .consultation-container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: "100%";
+  height: 350px;
+} */
+
+.consultation-container-bg {
+  background-image: url(../assets/consultation.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  /* opacity: 0.5; */
+}
+
+.consultation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 83, 165, 0.5);
+  /* padding: 130px; */
+  padding: 120px 0px;
+  font-family: ubuntu;
+}
+
+.consultation-btn {
+  background-color: #da9c37;
+  padding: 16px;
+  color: white !important;
+  cursor: pointer !important;
+}
+
+.contact-us-btn {
+  color: white !important;
+  cursor: pointer !important;
+  padding: 0px 36px;
+}
+
+.jama-over-contactus {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.jama-over-contactus-btn {
+  background-color: #eb8016;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 50px;
+  padding-left: 50px;
+  color: white !important;
+  border: "2px solid black" !important;
+  border-width: 1px !important;
+  border-color: black;
+}
+
+.portfolio-container {
+  padding-left: 13%;
+  /* padding-right: 13%; */
+  max-width: 1280;
+  font-family: ubuntu;
+  margin: 0;
+  background-color: white;
+}
+
+.portfolio-content {
+  color: rgb(171, 171, 171);
+  font-size: 14px;
+}
+
+.portfolio-image-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.portfolio-image {
+  width: 450px;
+  height: 300px;
+}
+
+.image-container {
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.row-container {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.jama-over-other {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+.main-heading {
+  padding-left: 0px;
+  padding-top: 50px;
+  width: 65%;
+}
+
+.contact-form-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  /*padding-top: 25;
+
+  padding-bottom: 25; */
+
+  background-color: #2c5e9f;
+  width: 100%;
+  margin: 0 auto;
+  float: right;
+}
+
+.main {
+  display: flex;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 120px;
+}
+
+.main-container {
+  max-width: 1280;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-section-heading {
+  /* width: 50%; */
+  flex: 0.65;
+}
+
+.main-contact-form {
+  /* width: 50%; */
+  flex: 0.35;
+}
+
+.contact-form-label {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 2px;
+  font-family: ubuntu;
+}
+
+.contactus-form-input {
+  background-color: #dddfe2 !important;
+  /* border-radius: 2px !important; */
+  height: 35px !important;
+  /*margin-top: 2px !important;
+  padding: 0px 10px !important;
+  width: 100%;
+  position: relative; */
+}
+
+.contact-form-field {
+  margin-bottom: 5px;
+}
+
+.contact-form-btn {
+  width: 100%;
+  border-radius: 2px;
+  background-color: #eb8016;
+  margin: 0 auto;
+  color: white !important;
+  height: 35px;
+  font-size: 16px;
+  position: relative;
+}
+
+.form-heading-1 {
+  font-size: 20px;
+  color: white;
+  font-family: ubuntu;
+  padding-bottom: 0px !important;
+  line-height: 2px !important;
+}
+
+.form-heading-2 {
+  font-size: 24px;
+  color: white;
+  font-family: ubuntu;
+  font-weight: 300;
+}
+.page-footer-section {
+  margin-top: 0px;
+}
+
+.portfolio-content {
+  font-family: ubuntu;
+}
+
+.main-heading-1 {
+  color: white;
+
+  font-size: 28px;
+
+  font-family: ubuntu;
+}
+.main-heading-2 {
+  color: white;
+  font-size: 55px;
+  margin-top: 0px;
+  padding-top: 5px;
+  font-family: ubuntu;
+  margin-bottom: 35px;
+}
+
+.main-heading-3 {
+  color: white;
+  font-size: 18px;
+  font-family: ubuntu;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-image {
+    width: 100%;
+    height: auto;
+  }
+  portfolio-content {
+    text-align: center;
+  }
+  .portfolio-container {
+    padding: 0;
+  }
+  .portfolio-image-container {
+    margin: 0;
+    padding: 0;
+  }
+  .consultation-container {
+    padding: 50px 0px;
+    text-align: center;
+  }
+  .why-image-container {
+    text-align: center;
+  }
+  .row-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .why-container {
+    padding-top: 0px;
+    margin-top: 200px;
+    padding-bottom: 68px;
+  }
+
+  .image-container {
+    text-align: center;
+    margin: 0;
+  }
+  .content-container {
+    text-align: center;
+    padding: "0px 50px";
+  }
+  .new-row {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .customer-heading {
+    text-align: center;
+    margin-bottom: 30px !important;
+  }
+  .consultation-btn {
+    margin-top: 30px;
+  }
+  .jama-over-other {
+    font-family: ubuntu;
+  }
+  .contact-form {
+    margin: 0 auto;
+  }
+  .main-heading {
+    padding-left: 0px;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .why-cell-content {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .main-section-heading {
+    flex: 1;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .main-contact-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-container {
+    /* max-width: 1280; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form-container {
+    float: none;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 45px;
+  }
+}
+
+@media only screen and (max-width: 358px) {
+  .main-section-heading {
+    width: 90%;
+  }
+  .main-contact-form {
+    width: 90%;
+  }
+  .main-heading-2 {
+    font-size: 35px;
+  }
+  .form-heading-2 {
+    font-size: 25px;
+  }
+  .contact-form-container {
+    float: none;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 35px;
+  }
+  .jama-over-other {
+    padding-top: 30px;
+  }
+  .why-container {
+    padding-top: 50px;
+    margin-top: 0px;
+  }
+
+  .main-contact-form {
+    margin-bottom: 60px;
+  }
+}

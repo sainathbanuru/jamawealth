@@ -28,7 +28,7 @@ class Aboutus extends Component {
     return (
       <div>
         <Helmet>
-          <title> Aboutus | Jama Wealth Management & Financial Planning </title>
+          <title>About Us | Jama Wealth Management & Financial Planning </title>
           <meta
             name="description"
             content="Jama Wealth Management offer a clinical equity portfolio which coupled with both machine learning and human intelligence. Get best returns in stock market with Jama Wealth equity portfolio"
