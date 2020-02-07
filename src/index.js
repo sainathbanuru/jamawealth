@@ -42,7 +42,7 @@ const routing = (
     {/* <BrowserRouter> */}
     <Switch>
       <Route exact path="/" component={Homepage} />
-      <Route path="/Test" component={Landingpage} />
+      <Route path="/landingpage" component={Landingpage} />
       <Route path="/HowjamaWorks" component={HowjamaWorks} />
       <Route path="/Aboutus" component={Aboutus} />
       <Route path="/testimonial" component={testimonial} />
