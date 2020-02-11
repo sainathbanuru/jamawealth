@@ -17,56 +17,106 @@ import "../css/test_page.css";
 import WOW from "wowjs";
 import { Helmet } from "react-helmet";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import FeatureSection from "./featureSection";
 
 class Aboutus extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      phone_no: "",
+      invest_amount: ""
+    };
+  }
   componentDidMount() {
     new WOW.WOW().init();
     window.scrollTo(0, 0);
   }
 
-  //   <div class="row">
-  //   <div class="col m4 offset-m2">
-  //     <img
-  //       src={require("../assets/valueicon2.svg")}
-  //       alt="Honesty"
-  //       class="why-image"
-  //     />
-  //   </div>
-  //   <div class="col m6">
-  //     <div class="why-cell-content">
-  //       <h5 class="why-cell-heading">Have Full Control</h5>
-  //       <p style={{ fontSize: 16 }} class="why-cell-content">
-  //         We Don't take your money to our custody. This removes
-  //         opacity and temptation to trade on your money.
-  //       </p>
-  //     </div>
-  //   </div>
-  // </div>
+  validateName = name => {
+    const re = /^[A-Za-z ]+$/;
+    let name_error;
+    const valid = re.test(name);
+    if (!valid) {
+      name_error = "Enter valid name";
+    }
+    this.setState({ name_error });
+    return valid;
+  };
+
+  validateEmail = email => {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let email_error;
+    const valid = re.test(email);
+    if (!valid) {
+      email_error = "Enter valid email";
+    }
+    this.setState({ email_error });
+    return valid;
+  };
+
+  validatePhone = phone => {
+    let re = /^([0|\+[0-9]{1,5})?([6-9][0-9]{9})$/;
+    let phone_error;
+    const valid = re.test(phone);
+    if (!valid) {
+      phone_error = "Enter valid number";
+    }
+    this.setState({ phone_error });
+    return valid;
+  };
+
+  validateAmount = amount => {
+    // var re = /^\d+(?:\.\d{0,2})$/;
+    var re = /^\d+$/;
+    let amount_error;
+    const valid = re.test(amount);
+    if (!valid) {
+      amount_error = "Enter valid amount";
+    }
+    this.setState({ amount_error });
+    return valid;
+  };
+
+  contactNow = async () => {
+    const valid = await this.validateAllFields();
+    if (valid) {
+      alert("validdd");
+    }
+  };
+
+  validateAllFields = async () => {
+    const name = await this.validateName(this.state.name);
+    const email = await this.validateEmail(this.state.email);
+    const phone_no = await this.validatePhone(this.state.phone_no);
+    const amount = await this.validateAmount(this.state.invest_amount);
+    return name && email && phone_no && amount;
+  };
 
   render() {
     return (
       <div>
         <Helmet>
-          <title> Test</title>
+          <title>Home</title>
           <meta
             name="description"
             content="Jama Wealth Management offer a clinical equity portfolio which coupled with both machine learning and human intelligence. Get best returns in stock market with Jama Wealth equity portfolio"
           ></meta>
         </Helmet>
         <div>
-          <div class="container-fluid">
+          <div className="container-fluid">
             {/* top section */}
 
-            <div class="background-image"></div>
+            <div className="background-image"></div>
             <div
-              class="row"
+              className="row navheader"
               style={{
                 paddingBottom: 10,
-
                 backgroundColor: "transparent"
               }}
             >
-              <div class="col m3 offset-m1">
+              <div className="col m3">
                 <a className="navbar-brand">
                   <Link to="/">
                     {" "}
@@ -80,77 +130,150 @@ class Aboutus extends Component {
               </div>
             </div>
 
-            <div class="main">
-              <div class="main-container">
-                <div class="main-section-heading">
-                  <div class="main-heading">
-                    <p class="main-heading-1">Build Wealth In Best</p>
-
-                    <p class="main-heading-2">Equities Safely</p>
-
-                    <p class="main-heading-3">
+            <div className="main">
+              <div className="main-container">
+                <div className="main-section-heading">
+                  <div className="main-heading">
+                    {/* <p className="main-heading-1">Build Wealth In Best</p>
+                    <p className="main-heading-2">Equities Safely</p> */}
+                    <p className="main-heading-3">
                       Equity investment portfolios, selected by experts and
                       machine learning algorithms. For busy professionals, CXOs
                       and business-owners
                     </p>
                   </div>
                 </div>
-                <div class="main-contact-form">
-                  <div class="contact-form-container" style={{}}>
-                    <p class="form-heading-1">
+                <div className="main-contact-form">
+                  <div className="contact-form-container" style={{}}>
+                    <p className="form-heading-new">CONTACT EQUITY ADVISOR</p>
+                    {/* <p className="form-heading-1">
                       <span style={{ color: "#da9537", fontFamily: "ubuntu" }}>
                         Contact Us{" "}
                       </span>
                       <span style={{ color: "#ababab" }}>FOR</span>
                     </p>
 
-                    <p class="form-heading-2">Investing In Equities</p>
-                    <div class="contact-form-field">
-                      <label style={{}} class="contact-form-label">
+                    <p className="form-heading-2">Investing In Equities</p> */}
+                    <div className="contact-form-field">
+                      <label style={{}} className="contact-form-label">
                         Name
                       </label>
                       <input
-                        value=""
+                        value={this.state.name}
                         id="name"
                         type="text"
-                        class="contactus-form-input"
+                        className="contactus-form-input"
+                        onChange={e => {
+                          this.validateName(e.target.value);
+                          this.setState({ name: e.target.value });
+                        }}
+                        style={{
+                          paddingLeft: 10
+                        }}
                       />
+                      <p
+                        style={{
+                          marginTop: 0,
+                          marginBottom: 0,
+                          color: "#da9537"
+                        }}
+                      >
+                        {this.state.name_error}
+                      </p>
                     </div>
-                    <div class="contact-form-field">
-                      <label style={{}} class="contact-form-label">
+                    <div className="contact-form-field">
+                      <label style={{}} className="contact-form-label">
                         Email
                       </label>
                       <input
-                        value=""
+                        value={this.state.email}
                         id="email"
                         type="text"
-                        class="contactus-form-input"
+                        className="contactus-form-input"
+                        onChange={e => {
+                          this.validateEmail(e.target.value);
+                          this.setState({ email: e.target.value });
+                        }}
+                        style={{
+                          paddingLeft: 10
+                        }}
                       />
+                      <p
+                        style={{
+                          marginTop: 0,
+                          marginBottom: 0,
+                          color: "#da9537"
+                        }}
+                      >
+                        {this.state.email_error}
+                      </p>
                     </div>
-                    <div class="contact-form-field">
-                      <label style={{}} class="contact-form-label">
+                    <div className="contact-form-field">
+                      <label style={{}} className="contact-form-label">
                         Phone Number
                       </label>
                       <input
-                        value=""
+                        value={this.state.phone_no}
                         id="phone"
                         type="text"
-                        class="contactus-form-input"
+                        className="contactus-form-input"
+                        onChange={e => {
+                          this.validatePhone(e.target.value);
+                          this.setState({
+                            phone_no: e.target.value
+                          });
+                        }}
+                        style={{
+                          paddingLeft: 10
+                        }}
                       />
+                      <p
+                        style={{
+                          marginTop: 0,
+                          marginBottom: 0,
+                          color: "#da9537"
+                        }}
+                      >
+                        {this.state.phone_error}
+                      </p>
                     </div>
-                    <div class="contact-form-field">
-                      <label style={{}} class="contact-form-label">
+                    <div className="contact-form-field">
+                      <label style={{}} className="contact-form-label">
                         Investment Amount
                       </label>
                       <input
-                        value=""
+                        value={this.state.invest_amount}
                         id="invest"
                         type="text"
-                        class="contactus-form-input"
+                        className="contactus-form-input"
+                        onChange={e => {
+                          this.validateAmount(e.target.value);
+
+                          this.setState({
+                            invest_amount: e.target.value
+                          });
+                        }}
+                        style={{
+                          paddingLeft: 10
+                        }}
                       />
+                      <p
+                        style={{
+                          marginTop: 0,
+                          marginBottom: 0,
+                          color: "#da9537"
+                        }}
+                      >
+                        {this.state.amount_error}
+                      </p>
                     </div>
                     <div>
-                      <a class="waves-effect waves-light btn contact-form-btn">
+                      <a
+                        className="waves-effect waves-light btn contact-form-btn"
+                        onClick={() => {
+                          this.contactNow();
+                        }}
+                      >
                         Contact NOW!
                       </a>
                     </div>
@@ -161,194 +284,132 @@ class Aboutus extends Component {
               {/* form end */}
             </div>
           </div>
-
-          <div class="why-container">
-            <h5 class="why-heading center">
-              Why should you hire us as your Investment Advisory?
-            </h5>
-            <div class="row row-container" style={{}}>
-              <div class="col m6 s12">
-                <div class="row">
-                  <div class="col m2 s12 image-container">
-                    <img
-                      src={require("../assets/honesty.svg")}
-                      alt="Honesty"
-                      class="why-image"
-                    />
-                  </div>
-                  <div class="col m8 s12 content-container">
-                    <h5 class="why-cell-heading">Honesty</h5>
-                    <p style={{ fontSize: 16 }} class="why-cell-content">
-                      No lies, No hidden costs for the clients. No Jargon. No BS
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col m6 s12">
-                <div class="row">
-                  <div class="col m2 s12 image-container">
-                    <img
-                      src={require("../assets/valueicon2.svg")}
-                      alt="Control"
-                      class="why-image"
-                    />
-                  </div>
-                  <div class="col m8 s12 content-container">
-                    <h5 class="why-cell-heading">Have Full Control</h5>
-                    <p style={{ fontSize: 16 }} class="why-cell-content">
-                      We Don't take your money to our custody. This removes
-                      opacity and temptation to trade on your money.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row row-container" style={{}}>
-              <div class="col m6 s12">
-                <div class="row">
-                  <div class="col m2 s12 image-container">
-                    <img
-                      src={require("../assets/value.svg")}
-                      alt="Frugality"
-                      class="why-image"
-                    />
-                  </div>
-                  <div class="col m8 s12 content-container">
-                    <h5 class="why-cell-heading">Frugality</h5>
-                    <p style={{ fontSize: 16 }} class="why-cell-content">
-                      We do what right for you. We will always be on your side.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col m6 s12">
-                <div class="row">
-                  <div class="col m2 s12 image-container">
-                    <img
-                      src={require("../assets/valueicon6.svg")}
-                      alt="ROI"
-                      class="why-image"
-                    />
-                  </div>
-                  <div class="col m8 s12 content-container">
-                    <h5 class="why-cell-heading">Get Long Term ROI</h5>
-                    <p style={{ fontSize: 16 }} class="why-cell-content">
-                      We do not impose lock-in on your funds. Which gives the
-                      flexibility to deploy wealth for your life needs.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div className="feature-section">
+            <div className="feature-section-container">
+              <FeatureSection />
             </div>
           </div>
 
           {/* our model portfolio */}
 
-          <div
+          {/* <div
             style={{
               width: "100%",
               position: "relative",
               backgroundColor: "white"
             }}
           >
-            <div class="row portfolio-container">
-              <div class="col m5 portfolio-content">
+            <div className="row portfolio-container">
+              <div className="col m5 portfolio-content">
                 <h5 style={{ color: "#1553a5", fontWeight: "bold" }}>
                   Our Model Portfolio
                 </h5>
-                <p class="portfolio-content">
+                <p className="portfolio-content">
                   Our model portfolio has performed exceptionally well over the
                   years
                 </p>
               </div>
-              <div class="col m5 portfolio-image-container" style={{}}>
+              <div className="col m5 portfolio-image-container" style={{}}>
                 <img
                   src={require("../assets/Landing_Page/model.png")}
                   style={{}}
-                  class="responsive portfolio-image"
+                  className="responsive portfolio-image"
                 />
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* portfolio end */}
 
           {/* jama over other */}
-          <div class="jama-over-other">
-            <div class="row portfolio-container">
-              <div class="col m5 portfolio-image-container" style={{}}>
+
+          <div className="comparison">
+            <div className="row comparison-container">
+              <div className="col m6 s12 comparison-one">
                 <img
                   src={require("../assets/Landing_Page/asset.png")}
                   style={{}}
-                  class="responsive portfolio-image"
+                  className="responsive portfolio-image"
                 />
               </div>
-              <div class="col m5 portfolio-content">
+              <div className="col m6 s12 comparison-two">
                 <h5 style={{ color: "#1553a5", fontWeight: "bold" }}>
                   Jama Wealth Model Equity Portfolio Over Other Asset Classes
                 </h5>
-                <p class="portfolio-content">
+                <p className="portfolio-content">
                   The long term focused quality stock portfolio of{" "}
                   <span style={{ color: "black" }}>JARS</span> has outperformed
                   bank deposits, gold and Nifty index.
                 </p>
               </div>
             </div>
-            <div class="jama-over-contactus">
-              <a
-                class="waves-effect waves-light btn contact-us-btn"
-                style={{ backgroundColor: "#fec20f" }}
-              >
-                Contact Us
-              </a>
-              {/* <a class="jama-over-contactus-btn">Contact Us</a> */}
-            </div>
           </div>
-
-          <div class="new-row" style={{ margin: 0 }}>
+          {/* <div className="jama-over-other">
             <div>
-              <h5
-                class="customer-heading"
-                style={{ color: "white", marginBottom: 20, marginTop: 50 }}
-              >
-                What our customers think of us:
-              </h5>
+              <div className="row portfolio-container">
+                <div className="col m5 portfolio-image-container" style={{}}>
+                  <img
+                    src={require("../assets/Landing_Page/asset.png")}
+                    style={{}}
+                    className="responsive portfolio-image"
+                  />
+                </div>
+                <div className="col m5 portfolio-content">
+                  <h5 style={{ color: "#1553a5", fontWeight: "bold" }}>
+                    Jama Wealth Model Equity Portfolio Over Other Asset Classes
+                  </h5>
+                  <p className="portfolio-content">
+                    The long term focused quality stock portfolio of{" "}
+                    <span style={{ color: "black" }}>JARS</span> has
+                    outperformed bank deposits, gold and Nifty index.
+                  </p>
+                </div>
+              </div>
+              <div className="jama-over-contactus">
+                <a
+                  className="waves-effect waves-light btn contact-us-btn"
+                  style={{ backgroundColor: "#fec20f" }}
+                >
+                  Contact Us
+                </a> */}
+          {/* <a className="jama-over-contactus-btn">Contact Us</a> */}
+          {/* </div>
             </div>
-            <div class="row customer-container" style={{}}>
-              {/* customer start */}
-              <div class="col m4 s12">
-                <div class="customer">
-                  {/* &#8220; */}
+          </div> */}
+
+          <div className="new-row" style={{ margin: 0 }}>
+            <h5
+              className="customer-heading center"
+              style={{ color: "white", marginBottom: 50, marginTop: 50 }}
+            >
+              Don't Take Our Word. Hear What Our Clients Say.
+            </h5>
+            <div className="row customer-container" style={{}}>
+              <div className="col m4 s12">
+                <div className="customer">
                   <img
                     src={require("../assets/quote1.png")}
-                    style={{
-                      width: 45,
-                      height: 30,
-                      position: "relative",
-                      top: 10,
-                      left: 10
-                    }}
+                    className="left-quote"
                   />
-                  <p class="customer-content">
-                    With Jama Wealth approach to stock picking, based on
-                    algorithm and deep insights I do get a sense of comfort and
-                    confidence that the funds gonna do well.
+                  <p className="customer-content">
+                    {/* I got impressed about No Hidden Cost, No lock-in and high
+                    transparency. My Money won't be in their custody, which
+                    means i am in full control my investments. */}
+                    <br />
+                    This portfolio is very divergent from Nifty. Falls lesser
+                    and rises higher!
+                    <br />
+                    <br />
                   </p>
                   <img
                     src={require("../assets/quote2.png")}
-                    style={{
-                      width: 45,
-                      height: 30,
-                      position: "relative",
-                      float: "right",
-                      marginRight: 10
-                    }}
+                    className="right-quote"
                   />
                 </div>
                 <img
                   src={require("../assets/jama_ravi.png")}
-                  alt="Ravi S Rao"
-                  class="customer-image"
+                  alt="Ravi Rao"
+                  className="customer-image"
                   style={{ display: "block", margin: "0 auto", marginTop: -55 }}
                 />
                 <div
@@ -359,45 +420,38 @@ class Aboutus extends Component {
                     marginBottom: 30
                   }}
                 >
-                  <h5>Ravi S Rao </h5>
+                  <h5>Ravi S Rao</h5>
                   <p style={{ color: "#6ac19e" }}>
                     Marketing Director & Member, Board of Directors at Value
                     Momentum
                   </p>
                 </div>
               </div>
-              {/* customer start */}
-              <div class="col m4 s12">
-                <div class="customer">
+              <div className="col m4 s12">
+                <div className="customer">
                   <img
                     src={require("../assets/quote1.png")}
-                    style={{
-                      width: 45,
-                      height: 30,
-                      position: "relative",
-                      top: 0,
-                      left: 10
-                    }}
+                    className="left-quote"
                   />
-                  <p class="customer-content">
-                    I Find JamaWealth as pretty good instrument for investments
-                    in Equities.
+                  <p className="customer-content">
+                    {/* I got impressed about No Hidden Cost, No lock-in and high
+                    transparency. My Money won't be in their custody, which
+                    means i am in full control my investments. */}
+                    <br />
+                    I find Jama Wealth as pretty good instrument for Equity
+                    Investments
+                    <br />
+                    <br />
                   </p>
                   <img
                     src={require("../assets/quote2.png")}
-                    style={{
-                      width: 45,
-                      height: 30,
-                      position: "relative",
-                      float: "right",
-                      marginRight: 10
-                    }}
+                    className="right-quote"
                   />
                 </div>
                 <img
                   src={require("../assets/jama_hari.png")}
-                  alt="Ravi S Rao"
-                  class="customer-image"
+                  alt="Harilal Neelakantan"
+                  className="customer-image"
                   style={{ display: "block", margin: "0 auto", marginTop: -55 }}
                 />
                 <div
@@ -409,42 +463,36 @@ class Aboutus extends Component {
                   }}
                 >
                   <h5>Harilal Neelakantan</h5>
-                  <p style={{ color: "#6ac19e" }}>Business Leader</p>
+                  <p style={{ color: "#6ac19e" }}>
+                    Location Head, Technology MNC
+                  </p>
                 </div>
               </div>
-              {/* customer start */}
-              <div class="col m4 s12">
-                <div class="customer">
+              <div className="col m4 s12">
+                <div className="customer">
                   <img
                     src={require("../assets/quote1.png")}
-                    style={{
-                      width: 45,
-                      height: 30,
-                      position: "relative",
-                      top: 10,
-                      left: 10
-                    }}
+                    className="left-quote"
                   />
-                  <p class="customer-content">
-                    I got impressed about No Hidden Cost, No lock-in and high
+                  <p className="customer-content">
+                    {/* I got impressed about No Hidden Cost, No lock-in and high
                     transparency. My Money won't be in their custody, which
-                    means i am in full control my investments.
+                    means i am in full control my investments. */}
+                    <br />
+                    Impressive. No hidden costs. No lockin. Highly transparent.
+                    <br />
+                    <br />
+                    <br />
                   </p>
                   <img
                     src={require("../assets/quote2.png")}
-                    style={{
-                      width: 45,
-                      height: 30,
-                      position: "relative",
-                      float: "right",
-                      marginRight: 10
-                    }}
+                    className="right-quote"
                   />
                 </div>
                 <img
                   src={require("../assets/jama_nageswar.png")}
-                  alt="Ravi S Rao"
-                  class="customer-image"
+                  alt="Nageswar Reddy"
+                  className="customer-image"
                   style={{ display: "block", margin: "0 auto", marginTop: -55 }}
                 />
                 <div
@@ -457,22 +505,24 @@ class Aboutus extends Component {
                 >
                   <h5>Nageswera Rao Vasireddy</h5>
                   <p style={{ color: "#6ac19e" }}>
-                    Sales Leader, Pharma Industry
+                    Business Leader, Pharma Major
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="consultation-container-bg">
-            <div class="consultation-container">
-              <h5 style={{ color: "white", marginBottom: 50 }}>
-                Let us help you acheive your life goals
-              </h5>
-              <a class="consultation-btn">GET FREE CONSULTATION</a>
+          <div className="consultation-container-bg">
+            <div className="consultation-opacity">
+              <div className="consultation-container">
+                {/* <h5 style={{ color: "white", marginBottom: 50 }}>
+                  Let us help you acheive your life goals
+                </h5> */}
+                <a className="consultation-btn">GET FREE CONSULTATION</a>
+              </div>
             </div>
           </div>
           {/* <div
-            class="row"
+            className="row"
             style={{
               backgroundColor: "black",
               paddingTop: 5,
@@ -489,7 +539,11 @@ class Aboutus extends Component {
               All Rights Reserved. Forward ® 2015
             </p>
           </div> */}
-          <Footer />
+          <div className="footer">
+            <div className="footer-container">
+              <Footer />
+            </div>
+          </div>
         </div>
       </div>
     );
