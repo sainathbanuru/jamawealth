@@ -35,14 +35,14 @@ import ContactUs from "./Component/contactUs";
 import Privacy from "./Component/privacy";
 import Contact from "./Component/contact";
 
-import Testpage from "./Component/Testpage";
+import Landingpage from "./Component/landingpage";
 
 const routing = (
   <Router>
     {/* <BrowserRouter> */}
     <Switch>
       <Route exact path="/" component={Homepage} />
-      <Route path="/Test" component={Testpage} />
+      <Route path="/landingpage" component={Landingpage} />
       <Route path="/HowjamaWorks" component={HowjamaWorks} />
       <Route path="/Aboutus" component={Aboutus} />
       <Route path="/testimonial" component={testimonial} />
