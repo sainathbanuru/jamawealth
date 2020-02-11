@@ -78,7 +78,7 @@ class Footer extends Component {
                 <h6 class="footer-titles">Information</h6>
                 <ul>
                   <li>
-                    <a href="/Aboutus">About Jama JARS</a>
+                    <a href="/Aboutus">About Jama</a>
                   </li>
                   <li>
                     <a href="/privacy">Privacy Policy</a>
