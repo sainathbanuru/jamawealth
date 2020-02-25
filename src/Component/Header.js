@@ -60,11 +60,11 @@ class Header extends Component {
                   Pricing
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/Compare" class="active">
                   Compare
                 </Link>
-              </li>
+              </li> */}
               {/* <li><Link to="/testimonial" class="active">Testimonials</Link></li> */}
               <li>
                 <a
