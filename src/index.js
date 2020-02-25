@@ -34,6 +34,7 @@ import SheerMagicArticle from "./Component/sheerMagicArticle";
 import ContactUs from "./Component/contactUs";
 import Privacy from "./Component/privacy";
 import Contact from "./Component/contact";
+import Compare from "./Component/Compare";
 
 import Landingpage from "./Component/landingpage";
 
@@ -75,6 +76,7 @@ const routing = (
       <Route path="/contactUs" component={ContactUs} />
       <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
+      <Route path="/Compare" component={Compare} />
     </Switch>
     {/* </BrowserRouter> */}
   </Router>

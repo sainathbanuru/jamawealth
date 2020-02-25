@@ -1,22 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Hotjar Tracking Code for www.jamawealth.com -->
-    <script>
-      (function(h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function() {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 1677309, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
     <!-- Google Tag Manager -->
     <script>
       (function(w, d, s, l, i) {
@@ -39,6 +23,10 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="ama Wealth Management offer a clinical equity portfolio which coupled with both machine learning and human intelligence. Get best returns in stock market with Jama Wealth equity portfolio"
+    />
     <link
       rel="apple-touch-icon"
       href="https://s3-ap-southeast-1.amazonaws.com/jamaappprod/Website/favicon-32x32.png"
@@ -80,13 +68,15 @@
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
-
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <title>
+      Jama Wealth - Ethical Investment Managers | Preserve Wealth & Prosper
+      More, with Machine Learning Powered Algorithms
+    </title>
   </head>
-
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript
@@ -103,30 +93,168 @@
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
-
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
-
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="../src/js/materialize.js"></script>
     <script src="../js/init.js"></script>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-      var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-      (function() {
-        var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = "https://embed.tawk.to/5e214911daaca76c6fce75f9/default";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
-        s0.parentNode.insertBefore(s1, s0);
-      })();
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+    <script>
+      var seriesOptions = [],
+        seriesCounter = 0,
+        names = ["Nifty", "JARS"];
+      /**
+       * Create the chart when all data is loaded
+       * @returns {undefined}
+       */
+      function createChart() {
+        window.chart = new Highcharts.stockChart(
+          "container",
+          {
+            credits: {
+              enabled: false
+            },
+            chart: {
+              renderTo: "container"
+            },
+            rangeSelector: {
+              verticalAlign: "bottom",
+              selected: 7,
+              inputEditDateFormat: "%b %e, %Y",
+              inputDateFormat: "%b %e, %Y",
+              inputEnabled: false,
+              buttons: [
+                {
+                  type: "month",
+                  count: 1,
+                  text: "1m"
+                },
+                {
+                  type: "month",
+                  count: 3,
+                  text: "3m"
+                },
+                {
+                  type: "month",
+                  count: 6,
+                  text: "6m"
+                },
+                {
+                  type: "ytd",
+                  text: "YTD"
+                },
+                {
+                  type: "year",
+                  count: 1,
+                  text: "1y"
+                },
+                {
+                  type: "year",
+                  count: 3,
+                  text: "3y"
+                },
+                {
+                  type: "year",
+                  count: 5,
+                  text: "5y"
+                },
+                {
+                  type: "all",
+                  text: "All"
+                }
+              ]
+            },
+            yAxis: {
+              labels: {
+                formatter: function() {
+                  return (this.value > 0 ? " + " : "") + this.value + "%";
+                }
+              },
+              plotLines: [
+                {
+                  value: 0,
+                  width: 2,
+                  color: "silver"
+                }
+              ]
+            },
+            plotOptions: {
+              series: {
+                compare: "percent",
+                showInNavigator: true
+              }
+            },
+            tooltip: {
+              pointFormat:
+                '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.change}%)<br/>',
+              valueDecimals: 2,
+              split: true
+            },
+            series: seriesOptions
+          },
+          function(chart) {
+            // apply the date pickers
+            setTimeout(function() {
+              $(
+                "input.highcharts-range-selector",
+                $(chart.container).parent()
+              ).datepicker();
+            }, 0);
+          }
+        );
+      }
+      var t = 0;
+      function success(data) {
+        // var name = this.url.match(/(msft|aapl|goog)/)[0].toUpperCase();
+        // var t = 0
+        if (t === 0) {
+          var name = "JARS";
+        } else {
+          var name = "Nifty";
+        }
+        t = t + 1;
+        var i = names.indexOf(name);
+        seriesOptions[i] = {
+          name: name,
+          data: data
+        };
+        // As we're loading the data asynchronously, we don't know what order it
+        // will arrive. So we keep a counter and create the chart when all the data is loaded.
+        seriesCounter += 1;
+        if (seriesCounter === names.length) {
+          createChart();
+        }
+        // $("#datepicker").datepicker();
+      }
+      $.datepicker.setDefaults({
+        dateFormat: "yy-mm-dd",
+        onSelect: function() {
+          this.onchange();
+          this.onblur();
+        }
+      });
+      $("input.highcharts-range-input").click(function(e) {
+        e.preventDefault();
+        var isValid = true;
+        /*perform validation checks, changing isValid value to false when needed*/
+        return false; //will return false if validation fails etc.
+      });
+      // jars
+      Highcharts.getJSON(
+        "https://api.jsonbin.io/b/5e4e1bfaf3a835559050001b",
+        success
+      );
+      //nifty
+      Highcharts.getJSON(
+        "https://api.jsonbin.io/b/5e4e1c2bd3c2f35597f459ed",
+        success
+      );
     </script>
-    <!--End of Tawk.to Script-->
   </body>
 </html>

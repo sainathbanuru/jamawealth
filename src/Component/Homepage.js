@@ -42,6 +42,10 @@ class Homepage extends Component {
             content="Jama Wealth Management offer a clinical equity portfolio which coupled with both machine learning and human intelligence. Get best returns in stock market with Jama Wealth equity portfolio"
           />
         </Helmet>
+        {/* <div
+          id="container"
+          style={{ width: 500, height: 500, margin: "0 auto" }}
+        ></div> */}
         <Introsection />
         <FeatureSection />
 
