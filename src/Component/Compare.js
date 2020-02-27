@@ -39,6 +39,34 @@ For busy professionals, CXOs and business-owners."
           id="container"
           style={{ width: 500, height: 500, margin: "0 auto", marginTop: 100 }}
         ></div>
+        <div class="research-invest-section">
+          <div class="row">
+            <div class="col s12 m6 offset-m3">
+              <div
+                class="research-invest-section-content"
+                style={{ paddingTop: 0 }}
+              >
+                {/* <h4 style={{ lineHeight: 1.5 }}>
+                  Too Busy To Track Investments? Not Able To Take Timely
+                  Portfolio Action?
+                </h4>
+                <p>
+                  As a busy professional or a businessman, we know that your
+                  primary focus is where it should be. Delegate the day to day
+                  tracking of your investment portfolio to a trusted advisor who
+                  helps grow your wealth with clean operating principles.
+                </p> */}
+                <div class="research-invest-btn-section">
+                  <Link to="/contactus">
+                    <a class="waves-effect waves-light btn btn-large btn-orange m-r-15">
+                      Contact Advisor
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <Footer />
       </div>
     );
