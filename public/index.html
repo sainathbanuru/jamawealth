@@ -129,11 +129,41 @@
               renderTo: "container"
             },
             rangeSelector: {
-              verticalAlign: "bottom",
-              selected: 7,
-              inputEditDateFormat: "%b %e, %Y",
-              inputDateFormat: "%b %e, %Y",
+              enabled: true,
               inputEnabled: false,
+              buttonTheme: {
+                // styles for the buttons
+                fill: "none",
+                stroke: "none",
+                "stroke-width": 0,
+                r: 8,
+                style: {
+                  color: "#039",
+                  fontWeight: "bold"
+                },
+                states: {
+                  hover: {},
+                  select: {
+                    fill: "#039",
+                    style: {
+                      color: "white"
+                    }
+                  }
+                  // disabled: { ... }
+                }
+              },
+              inputBoxBorderColor: "gray",
+              inputBoxWidth: 120,
+              inputBoxHeight: 18,
+              inputStyle: {
+                color: "#039",
+                fontWeight: "bold"
+              },
+              labelStyle: {
+                color: "silver",
+                fontWeight: "bold"
+              },
+              selected: 7,
               buttons: [
                 {
                   type: "month",
@@ -204,29 +234,24 @@
             series: seriesOptions
           },
           function(chart) {
+            console.log(chart.options.chart.renderTo);
             // apply the date pickers
+            // highcharts - label highcharts - range - input
             setTimeout(function() {
-              $(
-                "input.highcharts-range-selector",
-                $(chart.container).parent()
-              ).datepicker();
+              $("input", $("#" + chart.options.chart.renderTo)).datepicker({
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "2009:2030"
+              });
             }, 0);
           }
         );
       }
       var t = 0;
-      function success(data) {
-        // var name = this.url.match(/(msft|aapl|goog)/)[0].toUpperCase();
-        // var t = 0
-        if (t === 0) {
-          var name = "JARS";
-        } else {
-          var name = "Nifty";
-        }
-        t = t + 1;
-        var i = names.indexOf(name);
+      function successNifty(data) {
+        var i = names.indexOf("Nifty");
         seriesOptions[i] = {
-          name: name,
+          name: "Nifty",
           data: data
         };
         // As we're loading the data asynchronously, we don't know what order it
@@ -235,30 +260,38 @@
         if (seriesCounter === names.length) {
           createChart();
         }
-        // $("#datepicker").datepicker();
+      }
+      function successjars(data) {
+        var i = names.indexOf("JARS");
+        t = t + 1;
+        seriesOptions[i] = {
+          name: "JARS",
+          data: data
+        };
+        // As we're loading the data asynchronously, we don't know what order it
+        // will arrive. So we keep a counter and create the chart when all the data is loaded.
+        seriesCounter += 1;
+        if (seriesCounter === names.length) {
+          createChart();
+        }
       }
       $.datepicker.setDefaults({
         dateFormat: "yy-mm-dd",
-        onSelect: function() {
+        onSelect: function(dateText) {
           this.onchange();
           this.onblur();
         }
       });
-      $("input.highcharts-range-input").click(function(e) {
-        e.preventDefault();
-        var isValid = true;
-        /*perform validation checks, changing isValid value to false when needed*/
-        return false; //will return false if validation fails etc.
-      });
+      $(".highcharts-range-input").prop("disabled", true);
       // jars
       Highcharts.getJSON(
-        "https://api.jsonbin.io/b/5e4e1bfaf3a835559050001b",
-        success
+        "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/media/kbprofiles/jars_nav_values.json",
+        successjars
       );
       //nifty
       Highcharts.getJSON(
-        "https://api.jsonbin.io/b/5e4e1c2bd3c2f35597f459ed",
-        success
+        "https://jamaappprod.s3-ap-southeast-1.amazonaws.com/media/kbprofiles/nifty_nav_values.json",
+        successNifty
       );
     </script>
   </body>
