@@ -128,9 +128,13 @@
             chart: {
               renderTo: "container"
             },
+            exporting: {
+              enabled: false
+            },
             rangeSelector: {
               enabled: true,
               inputEnabled: false,
+              verticalAlign: "bottom",
               buttonTheme: {
                 // styles for the buttons
                 fill: "none",
@@ -265,7 +269,7 @@
         var i = names.indexOf("JARS");
         t = t + 1;
         seriesOptions[i] = {
-          name: "JARS",
+          name: "Jamā Wealth",
           data: data
         };
         // As we're loading the data asynchronously, we don't know what order it

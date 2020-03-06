@@ -317,6 +317,22 @@ span i {
   border-bottom: 2px solid #000;
 }
 
+.jars-section-title-heading h5 {
+  font-family: Roboto;
+  text-align: center;
+  /* margin-top: 60px;
+    margin-bottom: 60px; */
+}
+
+.jars-section-title-heading h5::after {
+  content: "";
+  display: block;
+  width: 5%;
+  padding-top: 20px;
+  margin: 0 auto;
+  border-bottom: 2px solid #000;
+}
+
 .Jars-section-left h4 {
   font-family: Roboto;
   line-height: 44px;

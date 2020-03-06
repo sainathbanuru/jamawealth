@@ -36,8 +36,14 @@ For busy professionals, CXOs and business-owners."
           ></meta>
         </Helmet>
         <div
+          class="jars-section-title-heading"
+          style={{ margin: "100px auto 0", textAlign: "center" }}
+        >
+          <h5>Compare Jamā Wealth Equity with Nifty 50</h5>
+        </div>
+        <div
           id="container"
-          style={{ width: 500, height: 500, margin: "0 auto", marginTop: 100 }}
+          style={{ width: 500, height: 400, margin: "0 auto", marginTop: 32 }}
         ></div>
         <div class="research-invest-section">
           <div class="row">
