@@ -48,9 +48,14 @@ For busy professionals, CXOs and business-owners."
             height: 400,
             margin: "0 auto",
             marginTop: 32,
-            maxWidth: 500
+            maxWidth: 500,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
           }}
-        ></div>
+        >
+          <div class="loader"></div>
+        </div>
         <div class="research-invest-section">
           <div class="row">
             <div class="col s12 m6 offset-m3">
