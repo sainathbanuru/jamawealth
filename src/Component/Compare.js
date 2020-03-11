@@ -28,7 +28,11 @@ class HowjamaWorks extends Component {
       <div>
         <Header />
         <Helmet>
-          <title> Jama Wealth | How Jama Welath Works </title>
+          <title>
+            {" "}
+            Compare Jama Wealth Portfolio Perofrmance With Nifty 50 | Jama
+            Wealth{" "}
+          </title>
           <meta
             name="description"
             content="Equity investment portfolios, selected by experts and machine learning algorithms.
