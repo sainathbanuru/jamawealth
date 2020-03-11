@@ -43,7 +43,13 @@ For busy professionals, CXOs and business-owners."
         </div>
         <div
           id="container"
-          style={{ width: 500, height: 400, margin: "0 auto", marginTop: 32 }}
+          style={{
+            width: "100%",
+            height: 400,
+            margin: "0 auto",
+            marginTop: 32,
+            maxWidth: 500
+          }}
         ></div>
         <div class="research-invest-section">
           <div class="row">
