@@ -30,7 +30,7 @@ class HowjamaWorks extends Component {
         <Helmet>
           <title>
             {" "}
-            Compare Jama Wealth Portfolio Perofrmance With Nifty 50 | Jama
+            Compare Jama Wealth Equity Investment Portfolio With Nifty 50 | Jama
             Wealth{" "}
           </title>
           <meta
