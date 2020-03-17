@@ -90,7 +90,9 @@ class HowjamaWorks extends Component {
       "https://jamaapptest2.s3.amazonaws.com/nifty_nav_values.json"
     );
 
-    const getDates = nifty.data;
+    console.log("jars", jars.data);
+    console.log("nifty", nifty.data);
+    const getDates = [...nifty.data];
     this.setState({
       data: [
         {
