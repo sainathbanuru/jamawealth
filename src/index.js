@@ -37,6 +37,7 @@ import Contact from "./Component/contact";
 import Compare from "./Component/Compare";
 
 import Landingpage from "./Component/landingpage";
+import ZoomRedirect from "./Component/zoom";
 
 const routing = (
   <Router>
@@ -77,6 +78,7 @@ const routing = (
       <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/Compare" component={Compare} />
+      <Route path="/zoom" component={ZoomRedirect} />
     </Switch>
     {/* </BrowserRouter> */}
   </Router>
