@@ -5,7 +5,7 @@ import {
   Route,
   NavLink,
   Switch,
-  BrowserRouter as Router
+  BrowserRouter as Router,
 } from "react-router-dom";
 import Homepage from "../src/Component/Homepage";
 import HowjamaWorks from "../src/Component/HowjamaWorks";
@@ -38,6 +38,8 @@ import Compare from "./Component/Compare";
 
 import Landingpage from "./Component/landingpage";
 import ZoomRedirect from "./Component/zoom";
+import CrisisComp from "./Component/CrisisCompare";
+import Compare2 from "./Component/Compare2";
 
 const routing = (
   <Router>
@@ -78,6 +80,8 @@ const routing = (
       <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/Compare" component={Compare} />
+      <Route path="/compare2" component={Compare2} />
+      <Route path="/crisisCompare" component={CrisisComp} />
       <Route path="/zoom" component={ZoomRedirect} />
     </Switch>
     {/* </BrowserRouter> */}
