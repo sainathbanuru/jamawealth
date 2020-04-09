@@ -40,6 +40,8 @@ import Landingpage from "./Component/landingpage";
 import ZoomRedirect from "./Component/zoom";
 import CrisisComp from "./Component/CrisisCompare";
 import Compare2 from "./Component/Compare2";
+import UpstoxRedirection from "./Component/upstoxRedirection";
+import ZerodhaRedirection from "./Component/zerodhaRedirection";
 
 const routing = (
   <Router>
@@ -83,6 +85,8 @@ const routing = (
       <Route path="/compare2" component={Compare2} />
       <Route path="/crisisCompare" component={CrisisComp} />
       <Route path="/zoom" component={ZoomRedirect} />
+      <Route path="/open-upstox" component={UpstoxRedirection} />
+      <Route path="/open-zerodha" component={ZerodhaRedirection} />
     </Switch>
     {/* </BrowserRouter> */}
   </Router>
